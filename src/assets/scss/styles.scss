@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Brand colors
+$orange: #f58511;
+$yellow: #ffd62e;
+$red: #f04521;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+
+$primary: $orange;
+
+$footer-background-color: #363636;
+
+$navbar-height: 3rem;  // Default 3.25rem
+$navbar-item-img-max-height: 3.6rem;
+$navbar-item-hover-color: red;
+
+.home-link-item {
+    border-right: 0.01em solid whitesmoke;
+    border-top: 0.01em solid whitesmoke;
+}
+
+.home-link :hover {
+    background-color: $yellow;
+}
+
+.highlight :hover {
+    background-color: $yellow;
+}
+
+// Import only what you need from Bulma
+@import "~/../node_modules/bulma/sass/utilities/_all.sass";
+@import "~/../node_modules/bulma/sass/base/_all.sass";
+
+@import "~/../node_modules/bulma/sass/elements/container.sass";
+@import "~/../node_modules/bulma/sass/elements/content.sass";
+@import "~/../node_modules/bulma/sass/elements/box.sass";
+@import "~/../node_modules/bulma/sass/elements/title.sass";
+@import "~/../node_modules/bulma/sass/elements/image.sass";
+@import "~/../node_modules/bulma/sass/elements/button.sass";
+// @import "~/../node_modules/bulma/sass/elements/_all.sass";
+
+@import "~/../node_modules/bulma/sass/grid/_all.sass";
+
+@import "~/../node_modules/bulma/sass/components/navbar.sass";
+@import "~/../node_modules/bulma/sass/components/tabs.sass";
+@import "~/../node_modules/bulma/sass/components/card.sass";
+@import "~/../node_modules/bulma/sass/components/media.sass";
+@import "~/../node_modules/bulma/sass/components/level.sass";
+// @import "~/../node_modules/bulma/sass/components/_all.sass";
+
+//@import "~/../node_modules/bulma-extensions/bulma-divider/dist/css/bulma-divider.sass";
+//@import "~/../node_modules/bulma-extensions/bulma-timeline/dist/css/bulma-timeline.sass";
+@import "~/../node_modules/bulma-extensions/bulma-ribbon/dist/css/bulma-ribbon.sass";
+
+@import "~/../node_modules/bulma/sass/layout/_all.sass";
