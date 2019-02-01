@@ -97,7 +97,15 @@
 
       </section>
 
-      
+      <section class="section hero" id="news">
+        <div class="hero-head">
+          <h1 class="title">News</h1>
+        </div>
+        <div class="hero-body">
+          <News />
+        </div>
+      </section>
+    
       <section class="hero">
         <figure class="image">
           <g-image src="../assets/improv-draft-16.jpg" />
@@ -105,7 +113,7 @@
       </section>
 
 
-      <section class="section hero is-medium" id="contact">
+      <section class="section hero is-light" id="contact">
         <div class="hero-head">
           <h1 class="title">Contacts</h1>
           <h2 class="subtitle">Let's keep in touch!</h2>
@@ -121,10 +129,12 @@
 
 <script>
 import Calendar from '~/components/Calendar.vue'
+import News from '~/components/News.vue'
 export default {
   name: "Home",
   components: {
-    Calendar
+    Calendar,
+    News
   },
   data: function () {
     return {}

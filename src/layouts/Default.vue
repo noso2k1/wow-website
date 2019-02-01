@@ -21,6 +21,7 @@
           <g-link class="navbar-item" href="#" v-scroll-to="'#top'" v-on:click="toggleBurger()">Home</g-link>
           <a class="navbar-item" v-scroll-to="'#about'" v-on:click="toggleBurger()">About us</a>
           <a class="navbar-item" v-scroll-to="'#calendar'" v-on:click="toggleBurger()">Calendar</a>
+          <a class="navbar-item" v-scroll-to="'#news'" v-on:click="toggleBurger()">News</a>
           <a class="navbar-item" v-scroll-to="'#contact'" v-on:click="toggleBurger()">Contacts</a>
           <a class="navbar-item" href="https://www.facebook.com/wombatsimprov" target="_blank"><span class="icon"><i class="fab fa-facebook-f"></i></span></a>
           <a class="navbar-item" href="mailto:wisdom@wombats.ch"><span class="icon"><i class="fas fa-envelope"></i></span></a>
@@ -31,6 +32,7 @@
           <g-link class="navbar-item" :to="{name:'home'}">Home</g-link>
           <a class="navbar-item" href="/#about">About us</a>
           <a class="navbar-item" href="/#calendar">Calendar</a>
+          <a class="navbar-item" href="/#news">News</a>
           <a class="navbar-item" href="/#contact">Contacts</a>
           <a class="navbar-item" href="https://www.facebook.com/wombatsimprov" target="_blank"><span class="icon"><i class="fab fa-facebook-f"></i></span></a>
           <a class="navbar-item" href="mailto:wisdom@wombats.ch"><span class="icon"><i class="fas fa-envelope"></i></span></a>

@@ -4,7 +4,7 @@
     <section class="hero">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">{{event.title}}</h1>
+          <h1 class="title" v-html="event.title" />
           <h2 class="subtitle">{{event.startDate}}</h2>
         </div>
       </div>
@@ -15,7 +15,7 @@
         <div class="section" v-if="event.content" v-html="event.content" />
       </div>
       <div class="tile">
-        <div class="section">
+        <div class="section box">
           <h2 class="subtitle is-spaced"><b>Where:</b> <a :href="event.venueWebsite"> {{event.venueNameAddress}}</a></h2>
           <h2 class="subtitle"><b>When:</b> {{event.startDate}} at {{event.startTime}}</h2>
         </div>

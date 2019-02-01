@@ -13,37 +13,12 @@
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <p class="title is-size-4">{{event.node.title}}</p>
+            <p class="title is-size-4" v-html="event.node.title" />
             <p class="subtitle is-size-6">{{event.node.venueName}}</p>
           </div>
         </div>
       </g-link>
     </div>
-
-  <!--<g-link class="has-ribbon media box highlight" v-for="(event,index) in events" :key="event.node.slug" :to="event.node.path">
-
-      <div v-if="index==0" class="ribbon is-info">Coming soon!</div>
-    <div class="media-left">
-      <div>
-              <p class="heading">{{monthNames[new Date(event.node.startDate).getMonth()]}}</p>
-              <p class="title">{{new Date(event.node.startDate).getDate()}}</p>
-      </div>
-    </div>
-    <div class="media-content">
-      <div class="content has-text-centered">
-          <div>
-            <p class="title is-size-4">{{event.node.title}}</p>
-            <p class="subtitle is-size-6">{{event.node.venueName}}</p>
-          </div> 
-      </div>
-    </div>
-
-  </g-link> -->
-
-
-
-
-
   </div>
 </template>
 
