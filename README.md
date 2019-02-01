@@ -9,9 +9,13 @@ To do before go-live:
 
 - [ ] "Contacts" section
 
-- [x] News section - List of posts (as calendar) and Posts pages
+- [x] "News" section - List of posts (as calendar) and Posts pages
 
 - [ ] "Get involved" section
+
+Corrections:
+
+- [ ] Calendar list, when resized the text gets out of the box
 
 Next steps:
 
