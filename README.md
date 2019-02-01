@@ -13,10 +13,6 @@ To do before go-live:
 
 - [ ] "Get involved" section
 
-Corrections:
-
-- [ ] Calendar list, when resized the text gets out of the box
-
 Next steps:
 
 - [ ] Friends page
