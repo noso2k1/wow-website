@@ -1,12 +1,12 @@
-# Default starter for Gridsome
-`
-### 1. Install Gridsome CLI tool if you don't have
+# wow-website
 
-`npm install --global @gridsome/cli`
+Wisdom of Wombats website
+Gridsome, Bulma and headless Wordpress
 
-### 2. Create a Gridsome project
+To do:
 
-1. `gridsome create my-gridsome-site` to install default starter </li>
-2. `cd my-gridsome-site` to open folder
-3. `gridsome develop` to start local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+- MailChimp, register and subscribe mail from the website
+
+- Posts page
+
+- 
