@@ -36,13 +36,13 @@ $navbar-item-hover-color: red;
 @import "~/../node_modules/bulma/sass/utilities/_all.sass";
 @import "~/../node_modules/bulma/sass/base/_all.sass";
 
-@import "~/../node_modules/bulma/sass/elements/container.sass";
-@import "~/../node_modules/bulma/sass/elements/content.sass";
-@import "~/../node_modules/bulma/sass/elements/box.sass";
-@import "~/../node_modules/bulma/sass/elements/title.sass";
-@import "~/../node_modules/bulma/sass/elements/image.sass";
-@import "~/../node_modules/bulma/sass/elements/button.sass";
-// @import "~/../node_modules/bulma/sass/elements/_all.sass";
+// @import "~/../node_modules/bulma/sass/elements/container.sass";
+// @import "~/../node_modules/bulma/sass/elements/content.sass";
+// @import "~/../node_modules/bulma/sass/elements/box.sass";
+// @import "~/../node_modules/bulma/sass/elements/title.sass";
+// @import "~/../node_modules/bulma/sass/elements/image.sass";
+// @import "~/../node_modules/bulma/sass/elements/button.sass";
+@import "~/../node_modules/bulma/sass/elements/_all.sass";
 
 @import "~/../node_modules/bulma/sass/grid/_all.sass";
 
@@ -53,8 +53,9 @@ $navbar-item-hover-color: red;
 @import "~/../node_modules/bulma/sass/components/level.sass";
 // @import "~/../node_modules/bulma/sass/components/_all.sass";
 
-//@import "~/../node_modules/bulma-extensions/bulma-divider/dist/css/bulma-divider.sass";
-//@import "~/../node_modules/bulma-extensions/bulma-timeline/dist/css/bulma-timeline.sass";
-@import "~/../node_modules/bulma-extensions/bulma-ribbon/dist/css/bulma-ribbon.sass";
+//@import "~/../node_modules/bulma-extensions/bulma-divider/src/sass/index.sass";
+@import "~/../node_modules/bulma-extensions/bulma-ribbon/src/sass/index.sass";
+@import "~/../node_modules/bulma-extensions/bulma-tooltip/src/sass/index.sass";
+@import "~/../node_modules/bulma-extensions/bulma-checkradio/src/sass/index.sass";
 
 @import "~/../node_modules/bulma/sass/layout/_all.sass";

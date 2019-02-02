@@ -6,24 +6,25 @@
         <div class="container">
           <h1 class="title" v-html="event.title" />
           <h2 class="subtitle">{{event.startDate}}</h2>
-        </div>
-      </div>
-    </section>
 
-    <section class="tile is-anchestor">
-      <div class="tile is-8">
-        <div class="section" v-if="event.content" v-html="event.content" />
-      </div>
-      <div class="tile">
-        <div class="section box">
-          <h2 class="subtitle is-spaced"><b>Where:</b> <a :href="event.venueWebsite"> {{event.venueNameAddress}}</a></h2>
-          <h2 class="subtitle"><b>When:</b> {{event.startDate}} at {{event.startTime}}</h2>
+          <section class="tile is-anchestor">
+            <div class="tile is-8">
+              <div v-if="event.content" v-html="event.content" />
+            </div>
+            <div class="tile">
+              <div class="box">
+                <h2 class="subtitle is-spaced"><b>Where:</b> <a :href="event.venueWebsite"> {{event.venueNameAddress}}</a></h2>
+                <h2 class="subtitle"><b>When:</b> {{event.startDate}} at {{event.startTime}}</h2>
+              </div>
+            </div>
+          </section>
+          <div class="section has-text-centered">
+            <g-image v-if="event.featuredMedia" :src="event.featuredMedia.url" width="800" />
+          </div>
+
         </div>
       </div>
     </section>
-    <div class="section has-text-centered">
-      <g-image v-if="event.featuredMedia" :src="event.featuredMedia.url" width="800" />
-    </div>
 
   </Layout>
 </template>

@@ -48,19 +48,15 @@
 
       <section class="section" id="about">
           <div class="container">
-            <h1 class="title">Who we are - OUR VISION</h1>
-            <h2 class="subtitle">What kind of show we do - Why we do what we do - We push our boundaries - Experiment - Get out of our comfort zone</h2>
+            <h1 class="title">About us</h1>
+            <h2 class="subtitle">Who are the Wisdom of Wombats</h2>
             <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in leo quis neque venenatis fermentum vitae eget justo. 
-                Etiam lacinia a nibh ut mattis. Fusce eget maximus magna. Proin aliquet lectus sed magna rutrum, sed ornare risus ultrices. 
-                Nulla condimentum, lectus sed hendrerit scelerisque, tellus quam volutpat risus, ac sagittis felis turpis id nulla. Ut non neque eros. 
-                Pellentesque dignissim tristique elit id molestie.</p>
-            <p>What kind of shows we do.</p>
-            <p class="title">Get involved</p>
-            <p>I have a venue and I want you to play here</p>
-            <p>I am a musician and I want to play with you</p>
-            <p>I do other art forms and I want to collaborate with you</p>
+            <p>We are a group of international performers based in Zurich, that create, organize and perform shows using improvisational theater in all its forms.
+              We perform mainly in English. Our goal is to push our boundaries and in the improv spirit we always try to get out of our comfort zone.</p>
+            <p>Our shows range from a classic game based comedy show (in the style of Whose Line is it Anyway), 
+              to long form (think of it as a full theater piece, but completely unscripted) and other more experimental.</p>
           </div>
+          <div class="level"><div class="level-item"><a class="button is-info" href="#" v-scroll-to="'#contact'">Get in touch</a></div></div>
         </div> 
       </section>
 
@@ -99,10 +95,14 @@
 
       <section class="section hero" id="news">
         <div class="hero-head">
-          <h1 class="title">News</h1>
+          <div class="container">
+            <h1 class="title">News</h1>
+          </div>
         </div>
         <div class="hero-body">
-          <News />
+          <div class="container">
+            <News />
+          </div>
         </div>
       </section>
     
@@ -115,12 +115,19 @@
 
       <section class="section hero is-light" id="contact">
         <div class="hero-head">
-          <h1 class="title">Contacts</h1>
-          <h2 class="subtitle">Let's keep in touch!</h2>
+          <div class="container">
+            <h1 class="title">Contacts</h1>
+            <h2 class="subtitle">Let's keep in touch!</h2>
+          </div>
         </div>
-        
+
         <div class="hero-body">
-          Contact us via <a href="mailto:wisdom@wombats.ch">email</a> or on Facebook <a href="http://facebook.com/wombatsimprov">@WombatsImprov</a>
+          <div class="container">
+            <p>Contact us via <a href="mailto:wisdom@wombats.ch">email</a> or on Facebook <a href="http://facebook.com/wombatsimprov">@WombatsImprov</a></p>
+            <div class="section">
+            <NewsletterSubscribe />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -130,11 +137,13 @@
 <script>
 import Calendar from '~/components/Calendar.vue'
 import News from '~/components/News.vue'
+import NewsletterSubscribe from '~/components/NewsletterSubscribe.vue'
 export default {
   name: "Home",
   components: {
     Calendar,
-    News
+    News,
+    NewsletterSubscribe
   },
   data: function () {
     return {}
