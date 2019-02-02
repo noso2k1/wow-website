@@ -11,11 +11,11 @@ To do before go-live:
 
 - [x] "News" section - List of posts (as calendar) and Posts pages
 
-- [ ] "Get involved" section
-
 - [x] MailChimp, register and subscribe mail from the website
 
 Next steps:
+
+- [ ] "Get involved" section
 
 - [ ] Friends page
 
