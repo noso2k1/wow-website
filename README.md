@@ -18,9 +18,15 @@ To do before go-live:
 
 Next steps:
 
+- [ ] Pagination of the "News" section
+
+- [ ] Cookies - with [this](https://github.com/apertureless/vue-cookie-law) or [this](https://github.com/promosis/vue-cookie-accept-decline)
+
 - [ ] Gallery of images
 
 - [ ] "Get involved" section
+
+- [ ] Make "Next show" a component
 
 - [ ] Friends page
 
@@ -58,14 +64,14 @@ What kind of show we do - Why we do what we do - We push our boundaries - Experi
 
 ## Known problems
 
-On Netlify the error message appears
+On Netlify or when installing node modules the following error message might appear:
 
 ```
 (undefined) assets/js/app.748fd6eb.js from Terser
 TypeError: Cannot read property 'minify' of undefined
 ```
 
-The solution is [here](https://github.com/webpack-contrib/terser-webpack-plugin/issues/66#issuecomment-460083623)
+The solution is [here](https://github.com/webpack-contrib/terser-webpack-plugin/issues/66#issuecomment-460083623).
 
 1. run ```npm install --save-dev terser@3.14.1 --save-exact```
 

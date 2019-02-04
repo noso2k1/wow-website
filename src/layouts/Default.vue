@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <a class="button is-text has-text-warning" id="btnToTop" href="#" v-scroll-to="'#top'" v-bind:style="{display: btnToTopDisplay}">
+    <a class="button is-text has-text-primary" id="btnToTop" href="#" v-scroll-to="'#top'" v-bind:style="{display: btnToTopDisplay}">
       <span class="icon"><i class="fas fa-chevron-circle-up fa-lg"></i></span><span>Back to top</span>
     </a>
     <header class="navbar is-fixed-top is-primary">

@@ -26,7 +26,7 @@
             <a class="column home-link-item" :href="nextShow.link">
              <div class="section">
                 <h1 class="title">Next show</h1>
-                <h2 class="subtitle">{{nextShow.startDate}} @ {{nextShow.venueName}}</h2>
+                <h2 class="subtitle"><span>{{nextShow.date}} @ {{nextShow.venueName}}</span></h2>
               </div>
             </a>
             <a class="column home-link-item" href="#" v-scroll-to="'#calendar'">
@@ -123,13 +123,34 @@
         </div>
 
         <div class="hero-body">
-          <div class="container">
-            <p>Contact us via <a href="mailto:wisdom@wombats.ch">email</a> or on Facebook <a href="http://facebook.com/wombatsimprov">@WombatsImprov</a></p>
-            <div class="section">
-            <NewsletterSubscribe />
-            </div>
+          <div class="level">
+            <a class="level-item has-text-centered" href="mailto:wisdom@wombats.ch">
+              <div>
+                <p class="icon has-text-dark"><i class="fas fa-envelope fa-4x"></i></p>
+                <p class="heading">Email</p>
+                <p>wisdom@wombats.ch</p>
+              </div>
+            </a>
+            <a class="level-item has-text-centered" href="https://www.facebook.com/wombatsimprov">
+              <div>
+                <p class="icon has-text-dark"><i class="fab fa-facebook-square fa-4x"></i></p>
+                <p class="heading">Facebook</p>
+                <p>@WombatsImprov</p>
+              </div>
+            </a>
+            <a class="level-item has-text-centered" href="#" v-scroll-to="'#calendar'">
+              <div>
+                <p class="icon has-text-dark"><i class="fas fa-grin fa-4x"></i></p>
+                <p class="heading">Meet us in person!</p>
+              </div>
+            </a>
           </div>
         </div>
+
+        <div class="section">
+          <NewsletterSubscribe />
+        </div>
+
       </section>
 
   </Layout>
@@ -167,6 +188,7 @@ export default {
       let startDateTxt = day + ' ' + monthNames[monthIndex] + ' ' + year
       nextShowTmp.startDate = startDateTxt
       nextShowTmp.link = events[0].node.path
+      nextShowTmp.date = events[0].node.date
       nextShowTmp.venueName = events[0].node.venueName
       return nextShowTmp
     }
@@ -180,7 +202,7 @@ query Events {
     edges {
       node {
         title
-        date
+        date (format: "d MMMM YYYY")
         venueName
         startDate
         startTime
