@@ -37,7 +37,7 @@ Next steps:
 
 - [ ] Messages in case of no events or no news
 
-- [ ] Update Gridsome WordPress plugin
+- [x] Update Gridsome WordPress plugin
 
 ## Ideas for content:
 
