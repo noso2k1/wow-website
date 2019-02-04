@@ -15,6 +15,8 @@ To do before go-live:
 
 Next steps:
 
+- [ ] Gallery of images
+
 - [ ] "Get involved" section
 
 - [ ] Friends page
@@ -37,11 +39,11 @@ Next steps:
 
 - [ ] Update Gridsome WordPress plugin
 
-## Notes on content:
+## Ideas on content:
 
-### Who we are - OUR VISION
+Who we are - OUR VISION
 
-### What kind of show we do - Why we do what we do - We push our boundaries - Experiment - Get out of our comfort zone
+What kind of show we do - Why we do what we do - We push our boundaries - Experiment - Get out of our comfort zone
 
 ### Get involved
 - I have a venue and I want you to play here
