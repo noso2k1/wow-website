@@ -1,34 +1,23 @@
 <template>
   <div>
-    <div class="content highlight" v-for="info in $static.news.edges" :key="info.node.slug">
-      <g-link class="level box has-ribbon" :to="info.node.path">
-        <div class="level-left">
-          <div class="level-item has-text-centered">
-            <div>
-              <p class="title">{{info.node.date}}</p>
-            </div>
-          </div>
+    <div class="content box" v-for="info in $static.news.edges" :key="info.node.slug">
+      <div class="columns">
+        <div class="column is-4">
+          <g-image v-if="info.node.featuredMedia" :src="info.node.featuredMedia.url" />
         </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <p class="title is-size-4" v-html="info.node.title" />
-            <div class="content" v-html="info.node.excerpt" />
-          </div>
+        <div class="column">
+          <p class="heading " v-html="info.node.date" />
+          <p class="title " v-html="info.node.title" />
+          <p class="content " v-html="info.node.excerpt" />
         </div>
-      </g-link>
+      </div>
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-  name: 'News',
-  data: function() {
-    return {
-      monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-    }
-  }
+  name: 'News'
 }
 </script>
 
@@ -44,7 +33,7 @@ query News {
           url
         }
         path
-        date (format: "ddd D MMMM YYYY")
+        date (format: "MMMM, D YYYY")
         excerpt
       }
     }

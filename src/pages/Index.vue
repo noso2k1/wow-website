@@ -1,6 +1,7 @@
 <template>
   <Layout :homepage="true">
     
+    <!-- Main section -->
     <section class="hero is-fullheight-with-navbar home-img is-dark">
         <!-- Hero content: will be in the middle -->
         <div class="hero-body">
@@ -45,7 +46,7 @@
 
       </section>
 
-
+      <!-- About section -->
       <section class="section" id="about">
           <div class="container">
             <h1 class="title">About us</h1>
@@ -60,7 +61,7 @@
         </div> 
       </section>
 
-
+      <!-- Reviews section -->
       <section class="hero is-primary divider-img is-medium">
         <div class="hero-body">
           <div class="container">
@@ -73,9 +74,8 @@
         </div>
       </section>
 
-
+      <!-- Calendar section -->
       <section class="section hero is-light" id="calendar">
-
         <div class="hero-head">
           <div class="container">
             <h1 class="title">Calendar</h1>
@@ -90,9 +90,16 @@
             </div>
           </div>
         </div>
-
+      </section>
+    
+      <!-- Interlude section -->
+      <section class="hero">
+        <figure class="image">
+          <g-image src="../assets/improv-draft-16.jpg" />
+        </figure>
       </section>
 
+      <!-- News section -->
       <section class="section hero" id="news">
         <div class="hero-head">
           <div class="container">
@@ -105,14 +112,8 @@
           </div>
         </div>
       </section>
-    
-      <section class="hero">
-        <figure class="image">
-          <g-image src="../assets/improv-draft-16.jpg" />
-        </figure>
-      </section>
 
-
+      <!-- Contacts section -->
       <section class="section hero is-light" id="contact">
         <div class="hero-head">
           <div class="container">

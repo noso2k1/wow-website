@@ -1,7 +1,10 @@
-# wow-website
+# Wisdom of Wombats website (wow-website)
 
 Wisdom of Wombats website
-Gridsome, Bulma and headless Wordpress
+
+Creted with Gridsome, Bulma and headless Wordpress
+
+**Wisdom of Wombats** is an improv theater group based in Zurich Switzerland
 
 To do before go-live:
 
@@ -64,6 +67,6 @@ TypeError: Cannot read property 'minify' of undefined
 
 The solution is [here](https://github.com/webpack-contrib/terser-webpack-plugin/issues/66#issuecomment-460083623)
 
-1. npm install --save-dev terser@3.14.1 --save-exact
+1. run ```npm install --save-dev terser@3.14.1 --save-exact```
 
 2. edit package-lock.json > locate: "terser-webpack-plugin" > inside it's tree: change: "terser": "^3.8.1" (or whatever), to "terser": "3.14.1" and make sure there is no “^” in front of the version
