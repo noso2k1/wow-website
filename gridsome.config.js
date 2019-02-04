@@ -8,7 +8,7 @@ module.exports = {
   siteName: 'Wisdom of Wombats',
   plugins: [
     {
-      use: '@gridsome/source-wordpress',
+      use: '@gridsome/source-wordpress-event',
       options: {
         baseUrl: 'http://test.wombats.ch',
         typeName: 'WordPress',

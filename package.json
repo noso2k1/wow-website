@@ -7,11 +7,12 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/source-wordpress-event": "https://github.com/noso2k1/source-wordpress-event/tarball/master",
+    "better-queue": "^3.8.10",
     "gridsome": "^0.4.6",
     "vue-scrollto": "^2.13.0"
   },
   "devDependencies": {
-    "@gridsome/source-wordpress": "^0.1.1",
     "bulma": "^0.7.2",
     "bulma-extensions": "^4.0.1",
     "node-sass": "^4.11.0",
