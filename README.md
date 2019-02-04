@@ -10,7 +10,7 @@ To do before go-live:
 
 - [x] "About us" section
 
-- [ ] "Contacts" section
+- [x] "Contacts" section
 
 - [x] "News" section - List of posts (as calendar) and Posts pages
 
