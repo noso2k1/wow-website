@@ -39,13 +39,13 @@ Next steps:
 
 - [ ] Update Gridsome WordPress plugin
 
-## Ideas on content:
+## Ideas for content:
 
 Who we are - OUR VISION
 
 What kind of show we do - Why we do what we do - We push our boundaries - Experiment - Get out of our comfort zone
 
-### Get involved
+## Get involved
 - I have a venue and I want you to play here
 - I am a musician and I want to play with you
 - I do other art forms and I want to collaborate with you
