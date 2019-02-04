@@ -16,6 +16,7 @@
     "bulma": "^0.7.2",
     "bulma-extensions": "^4.0.1",
     "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "terser": "3.14.1"
   }
 }

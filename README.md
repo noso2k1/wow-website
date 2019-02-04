@@ -46,6 +46,24 @@ Who we are - OUR VISION
 What kind of show we do - Why we do what we do - We push our boundaries - Experiment - Get out of our comfort zone
 
 ## Get involved
+
 - I have a venue and I want you to play here
+
 - I am a musician and I want to play with you
+
 - I do other art forms and I want to collaborate with you
+
+## Known problems
+
+On Netlify the error message appears
+
+```
+(undefined) assets/js/app.748fd6eb.js from Terser
+TypeError: Cannot read property 'minify' of undefined
+```
+
+The solution is [here](https://github.com/webpack-contrib/terser-webpack-plugin/issues/66#issuecomment-460083623)
+
+1. npm install --save-dev terser@3.14.1 --save-exact
+
+2. edit package-lock.json > locate: "terser-webpack-plugin" > inside it's tree: change: "terser": "^3.8.1" (or whatever), to "terser": "3.14.1" and make sure there is no “^” in front of the version
