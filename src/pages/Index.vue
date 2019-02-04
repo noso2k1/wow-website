@@ -127,21 +127,19 @@
             <a class="level-item has-text-centered" href="mailto:wisdom@wombats.ch">
               <div>
                 <p class="icon has-text-dark"><i class="fas fa-envelope fa-4x"></i></p>
-                <p class="heading">Email</p>
-                <p>wisdom@wombats.ch</p>
+                <p class="has-text-weight-bold">wisdom@wombats.ch</p>
               </div>
             </a>
             <a class="level-item has-text-centered" href="https://www.facebook.com/wombatsimprov">
               <div>
                 <p class="icon has-text-dark"><i class="fab fa-facebook-square fa-4x"></i></p>
-                <p class="heading">Facebook</p>
-                <p>@WombatsImprov</p>
+                <p class="has-text-weight-bold">@WombatsImprov</p>
               </div>
             </a>
             <a class="level-item has-text-centered" href="#" v-scroll-to="'#calendar'">
               <div>
                 <p class="icon has-text-dark"><i class="fas fa-grin fa-4x"></i></p>
-                <p class="heading">Meet us in person!</p>
+                <p class="has-text-weight-bold">Meet us in person!</p>
               </div>
             </a>
           </div>
