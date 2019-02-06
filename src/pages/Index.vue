@@ -57,7 +57,7 @@
             <p>Our shows range from a classic game based comedy show (in the style of Whose Line is it Anyway), 
               to long form (think of it as a full theater piece, but completely unscripted) and other more experimental.</p>
           </div>
-          <div class="level"><div class="level-item"><a class="button is-info" href="#" v-scroll-to="'#contact'">Get in touch</a></div></div>
+          <div class="level"><div class="level-item"><a class="button is-info" href="#" v-scroll-to="'#contact'">Let's connect</a></div></div>
         </div> 
       </section>
 
@@ -99,16 +99,16 @@
         </figure>
       </section>
 
-      <!-- News section -->
-      <section class="section hero" id="news">
+      <!-- Stories section -->
+      <section class="section hero" id="stories">
         <div class="hero-head">
           <div class="container">
-            <h1 class="title">News</h1>
+            <h1 class="title">Stories</h1>
           </div>
         </div>
         <div class="hero-body">
           <div class="container">
-            <News />
+            <Stories />
           </div>
         </div>
       </section>
@@ -117,25 +117,39 @@
       <section class="section hero is-light" id="contact">
         <div class="hero-head">
           <div class="container">
-            <h1 class="title">Contacts</h1>
-            <h2 class="subtitle">Let's keep in touch!</h2>
+            <h1 class="title">Let's connect</h1>
+            <h2 class="subtitle">Do you want to keep in touch with us? Here's how</h2>
           </div>
         </div>
 
         <div class="hero-body">
-          <div class="level">
+          <div class="level container">
             <a class="level-item has-text-centered" href="mailto:wisdom@wombats.ch">
               <div>
                 <p class="icon has-text-dark"><i class="fas fa-envelope fa-4x"></i></p>
                 <p>Drop us an email</p>
-                <p>wisdom@wombats.ch</p>
+                <p class="is-uppercase has-text-weight-bold">wisdom@wombats.ch</p>
               </div>
             </a>
             <a class="level-item has-text-centered" href="https://www.facebook.com/wombatsimprov" target="_blank">
               <div>
                 <p class="icon has-text-dark"><i class="fab fa-facebook-square fa-4x"></i></p>
                 <p>Like us on Facebook</p>
-                <p>@WombatsImprov</p>
+                <p class="is-uppercase has-text-weight-bold">@WombatsImprov</p>
+              </div>
+            </a>
+            <a class="level-item has-text-centered" href="https://www.instagram.com/wombatsimprov/" target="_blank">
+              <div>
+                <p class="icon has-text-dark"><i class="fab fa-instagram fa-4x"></i></p>
+                <p>Follow us on Instagram</p>
+                <p class="is-uppercase has-text-weight-bold">@WombatsImprov</p>
+              </div>
+            </a>
+            <a class="level-item has-text-centered" href="https://www.meetup.com/Pop-up-Performances/" target="_blank">
+              <div>
+                <p class="icon has-text-dark"><i class="fab fa-meetup fa-4x"></i></p>
+                <p>Join our Meetup group</p>
+                <p class="is-uppercase has-text-weight-bold">Pop up Performances</p>
               </div>
             </a>
             <a class="level-item has-text-centered" href="#" v-scroll-to="'#calendar'">
@@ -148,7 +162,7 @@
         </div>
 
         <div class="section">
-          <NewsletterSubscribe />
+          <NewsletterSubscribe class="container" />
         </div>
 
       </section>
@@ -158,13 +172,13 @@
 
 <script>
 import Calendar from '~/components/Calendar.vue'
-import News from '~/components/News.vue'
+import Stories from '~/components/Stories.vue'
 import NewsletterSubscribe from '~/components/NewsletterSubscribe.vue'
 export default {
   name: "Home",
   components: {
     Calendar,
-    News,
+    Stories,
     NewsletterSubscribe
   },
   data: function () {

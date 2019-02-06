@@ -30,7 +30,9 @@ Next steps:
 
 - [ ] Friends page
 
-- [ ] Instagram link
+- [ ] Page with the group members
+
+- [x] Instagram link
 
 - [ ] Are statistics updated with this JAMstack solutions?
 
