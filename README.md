@@ -2,7 +2,7 @@
 
 Wisdom of Wombats website
 
-Creted with Gridsome, Bulma and headless Wordpress
+Created with Gridsome, Bulma and headless Wordpress
 
 **Wisdom of Wombats** is an improv theater group based in Zurich Switzerland
 

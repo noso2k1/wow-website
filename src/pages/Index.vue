@@ -131,7 +131,7 @@
                 <p>wisdom@wombats.ch</p>
               </div>
             </a>
-            <a class="level-item has-text-centered" href="https://www.facebook.com/wombatsimprov">
+            <a class="level-item has-text-centered" href="https://www.facebook.com/wombatsimprov" target="_blank">
               <div>
                 <p class="icon has-text-dark"><i class="fab fa-facebook-square fa-4x"></i></p>
                 <p>Like us on Facebook</p>

@@ -40,13 +40,6 @@
       </div>
     </header>
 
-    <!--<header class="header">
-      <nav class="nav">
-        <g-link class="nav__link" :to="{ name: 'home' }">{{ $static.metaData.siteName }}</g-link>
-        <g-link class="nav__link" :to="{ name: 'about' }">About</g-link>
-      </nav>
-    </header>-->
-
     <!-- This is where we add the page content -->
     <slot/>
 
