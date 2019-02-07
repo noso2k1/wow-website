@@ -23,7 +23,7 @@
         <!-- Hero footer: will stick at the bottom -->
         <footer class="hero-foot">
           <nav class="columns home-link">
-            <a class="column home-link-item" :href="nextShow.link">
+            <a class="column home-link-item" :href="nextShow.path">
              <div class="section">
                 <h1 class="title">Next show</h1>
                 <h2 class="subtitle"><span>{{nextShow.date}} @ {{nextShow.venueName}}</span></h2>
@@ -100,7 +100,7 @@
       </section>
 
       <!-- Stories section -->
-      <section class="section hero" id="stories">
+      <section class="section hero is-light" id="stories">
         <div class="hero-head">
           <div class="container">
             <h1 class="title">Stories</h1>
@@ -109,6 +109,38 @@
         <div class="hero-body">
           <div class="container">
             <Stories />
+          </div>
+        </div>
+      </section>
+
+      <!-- Impressions/Instagram feed -->
+      <section class="section hero" id="impressions">
+        <div class="hero-head">
+          <div class="container">
+            <h1 class="title">Impressions from our Instagram feed</h1>
+          </div>
+        </div>
+        <div class="hero-body container">
+          <vue-instagram :token="instaToken" :count="6" class="columns is-multiline is-mobile">
+            <template slot="feeds" slot-scope="props">
+              <div class="column is-4-desktop is-6-tablet is-6-mobile">
+                <div class="card">
+                  <a class="card-image" :href="props.feed.link" target="_blank">
+                    <figure class="image is-square">
+                      <img :src="props.feed.images.standard_resolution.url" alt="Image">
+                    </figure>
+                  </a>
+                  <div class="card-content">
+                    <div class="subtitle is-6" style="height: 100px; overflow: auto;" v-html="props.feed.caption.text"/>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </vue-instagram>
+        </div>
+        <div class="hero-foot level container">
+          <div class="level-item">
+            <a class="button is-dark is-medium is-fullwidth" href="https://www.instagram.com/wombatsimprov/" target="_blank">More on our Instagram</a>
           </div>
         </div>
       </section>
@@ -174,6 +206,7 @@
 import Calendar from '~/components/Calendar.vue'
 import Stories from '~/components/Stories.vue'
 import NewsletterSubscribe from '~/components/NewsletterSubscribe.vue'
+
 export default {
   name: "Home",
   components: {
@@ -182,29 +215,15 @@ export default {
     NewsletterSubscribe
   },
   data: function () {
-    return {}
+    return {
+      instaToken: '10835943873.7115bff.19834ca1a1114f5c91b2c3b9577d008f'
+     }
   },
   computed: {
     nextShow: function() {
-      let nextShowTmp = {}
-      let events = []
-      let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-      events = this.$static.events.edges
-      events.sort(function(a,b){
-        if(a.node.startDate < b.node.startDate) { return -1 }
-        if(a.node.startDate > b.node.startDate) { return 1 }
-        return 0
-      });
-      let eventDate = new Date(events[0].node.startDate)
-      let day = eventDate.getDate()
-      let monthIndex = eventDate.getMonth()
-      let year = eventDate.getFullYear()
-      let startDateTxt = day + ' ' + monthNames[monthIndex] + ' ' + year
-      nextShowTmp.startDate = startDateTxt
-      nextShowTmp.link = events[0].node.path
-      nextShowTmp.date = events[0].node.date
-      nextShowTmp.venueName = events[0].node.venueName
-      return nextShowTmp
+      if (this.$static.events.edges.length != 0){
+        return this.$static.events.edges[0].node
+      }
     }
   }
 }
@@ -218,13 +237,7 @@ query Events {
         title
         date (format: "d MMMM YYYY")
         venueName
-        startDate
-        startTime
         path
-        featuredMedia {
-          url
-        }
-        slug
       }
     }
   }

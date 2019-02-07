@@ -22,6 +22,7 @@
           <a class="navbar-item" v-scroll-to="'#about'" v-on:click="toggleBurger()">About us</a>
           <a class="navbar-item" v-scroll-to="'#calendar'" v-on:click="toggleBurger()">Calendar</a>
           <a class="navbar-item" v-scroll-to="'#stories'" v-on:click="toggleBurger()">Stories</a>
+          <a class="navbar-item" v-scroll-to="'#impressions'" v-on:click="toggleBurger()">Impressions</a>
           <a class="navbar-item" v-scroll-to="'#contact'" v-on:click="toggleBurger()">Let's connect</a>
           <a class="navbar-item" href="https://www.facebook.com/wombatsimprov" target="_blank"><span class="icon"><i class="fab fa-facebook-f"></i></span></a>
           <a class="navbar-item" href="https://www.instagram.com/wombatsimprov/" target="_blank"><span class="icon"><i class="fab fa-instagram"></i></span></a>
@@ -35,6 +36,7 @@
           <a class="navbar-item" href="/#calendar">Calendar</a>
           <a class="navbar-item" href="/#stories">Stories</a>
           <a class="navbar-item" href="/#contact">Let's connect</a>
+          <a class="navbar-item" href="/#impressions">Impressions</a>
           <a class="navbar-item" href="https://www.facebook.com/wombatsimprov" target="_blank"><span class="icon"><i class="fab fa-facebook-f"></i></span></a>
           <a class="navbar-item" href="https://www.instagram.com/wombatsimprov/" target="_blank"><span class="icon"><i class="fab fa-instagram"></i></span></a>
           <a class="navbar-item" href="mailto:wisdom@wombats.ch"><span class="icon"><i class="fas fa-envelope"></i></span></a>
@@ -52,6 +54,10 @@
       </div>
     </footer>
 
+    <footer>
+      <cookie-law theme="dark-lime"></cookie-law>
+    </footer>
+
   </div>
 </template>
 
@@ -64,7 +70,9 @@ query {
 </static-query>
 
 <script>
+import CookieLaw from 'vue-cookie-law'
 export default {
+  components: { CookieLaw },
   data: function() {
     return {
       burgerActive: false,

@@ -18,23 +18,23 @@ To do before go-live:
 
 Next steps:
 
+- [x] Instagram link
+
+- [x] Update Gridsome WordPress plugin
+
+- [x] Add instagram feed
+
 - [ ] Pagination of the "News" section
 
-- [ ] Cookies - with [this](https://github.com/apertureless/vue-cookie-law) or [this](https://github.com/promosis/vue-cookie-accept-decline)
-
-- [ ] Gallery of images
+- [x] Cookies - with [this](https://github.com/apertureless/vue-cookie-law) or [this](https://github.com/promosis/vue-cookie-accept-decline)
 
 - [ ] "Get involved" section
-
-- [ ] Make "Next show" a component
 
 - [ ] Friends page
 
 - [ ] Page with the group members
 
-- [x] Instagram link
-
-- [ ] Are statistics updated with this JAMstack solutions?
+- [ ] Are statistics updated with this solutions?
 
 - [ ] Add more comments
 
@@ -48,7 +48,11 @@ Next steps:
 
 - [ ] Messages in case of no events or no news
 
-- [x] Update Gridsome WordPress plugin
+- [ ] Manage differently carousel and video in the insta feed
+
+- [ ] ~~Gallery of images~~
+
+- [ ] ~~Make "Next show" a component~~
 
 ## Ideas for content:
 
@@ -78,3 +82,24 @@ The solution is [here](https://github.com/webpack-contrib/terser-webpack-plugin/
 1. run ```npm install --save-dev terser@3.14.1 --save-exact```
 
 2. edit package-lock.json > locate: "terser-webpack-plugin" > inside it's tree: change: "terser": "^3.8.1" (or whatever), to "terser": "3.14.1" and make sure there is no “^” in front of the version
+
+##How to get Instagram token
+
+Add a link in the website
+
+``` <a href="https://api.instagram.com/oauth/authorize/?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code">Get Started</a> ```
+
+An Instagram login screen will popup. Once the user is authenticated, Instagram will redirect the browser to the "YOUR_REDIRECT_URI" and the token is in the redirected URL
+
+``` http://localhost:8080/#access_token=xxxxx.xxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxx ```
+
+To register the client follow the steps in this [Medium page](https://medium.com/@bkwebster/how-to-get-instagram-api-access-token-and-fix-your-broken-feed-c8ad470e3f02)
+
+
+References: 
+
+- [Stackoverflow post](https://stackoverflow.com/questions/16496511/how-to-get-an-instagram-access-token)
+
+- [Instagram Developer page](https://www.instagram.com/developer/)
+
+- [Official Instagram doc](https://www.instagram.com/developer/authentication/)

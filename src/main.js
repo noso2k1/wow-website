@@ -3,6 +3,7 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
+import VueInstagram from 'vue-instagram'
 import '~/assets/scss/styles.scss'
 
 export default function (Vue, {router, head, isClient}) {
@@ -16,4 +17,5 @@ export default function (Vue, {router, head, isClient}) {
   Vue.use(VueScrollTo, {
     offset:-65
   })
+  Vue.use(VueInstagram)
 }
