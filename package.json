@@ -10,7 +10,6 @@
     "@gridsome/source-wordpress-event": "https://github.com/noso2k1/source-wordpress-event/tarball/master",
     "better-queue": "^3.8.10",
     "gridsome": "^0.4.6",
-    "vue-cookie-law": "^1.8.0",
     "vue-instagram": "^2.0.1",
     "vue-scrollto": "^2.13.0"
   },

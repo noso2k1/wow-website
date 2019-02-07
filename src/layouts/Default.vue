@@ -54,10 +54,6 @@
       </div>
     </footer>
 
-    <footer>
-      <cookie-law theme="dark-lime"></cookie-law>
-    </footer>
-
   </div>
 </template>
 
@@ -70,9 +66,7 @@ query {
 </static-query>
 
 <script>
-import CookieLaw from 'vue-cookie-law'
 export default {
-  components: { CookieLaw },
   data: function() {
     return {
       burgerActive: false,

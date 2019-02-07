@@ -26,7 +26,7 @@ Next steps:
 
 - [ ] Pagination of the "News" section
 
-- [x] Cookies - with [this](https://github.com/apertureless/vue-cookie-law) or [this](https://github.com/promosis/vue-cookie-accept-decline)
+- [ ] Cookies - with [this](https://github.com/promosis/vue-cookie-accept-decline) - With [this](https://github.com/apertureless/vue-cookie-law) BUILD does not work.
 
 - [ ] "Get involved" section
 
