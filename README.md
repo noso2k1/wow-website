@@ -83,30 +83,10 @@ The solution is [here](https://github.com/webpack-contrib/terser-webpack-plugin/
 
 2. edit package-lock.json > locate: "terser-webpack-plugin" > inside it's tree: change: "terser": "^3.8.1" (or whatever), to "terser": "3.14.1" and make sure there is no “^” in front of the version
 
-##How to get Instagram token
+### vue-instagram error when building
 
-Add a link in the website
-
-``` <a href="https://api.instagram.com/oauth/authorize/?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code">Get Started</a> ```
-
-An Instagram login screen will popup. Once the user is authenticated, Instagram will redirect the browser to the "YOUR_REDIRECT_URI" and the token is in the redirected URL
-
-``` http://localhost:8080/#access_token=xxxxx.xxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxx ```
-
-To register the client follow the steps in this [Medium page](https://medium.com/@bkwebster/how-to-get-instagram-api-access-token-and-fix-your-broken-feed-c8ad470e3f02)
-
-
-References: 
-
-- [Stackoverflow post](https://stackoverflow.com/questions/16496511/how-to-get-an-instagram-access-token)
-
-- [Instagram Developer page](https://www.instagram.com/developer/)
-
-- [Official Instagram doc](https://www.instagram.com/developer/authentication/)
-
-
-#vue-instagram error when building
 Code to use when [issue #21](https://github.com/kevinongko/vue-instagram/issues/21) on vue-instagram is solved
+
 ```
       <!-- Impressions/Instagram feed -->
       <section class="section hero" id="impressions">
@@ -140,3 +120,24 @@ Code to use when [issue #21](https://github.com/kevinongko/vue-instagram/issues/
         </div>
       </section>
 ```
+
+## How to get Instagram token
+
+Add a link in the website
+
+``` <a href="https://api.instagram.com/oauth/authorize/?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code">Get Started</a> ```
+
+An Instagram login screen will popup. Once the user is authenticated, Instagram will redirect the browser to the "YOUR_REDIRECT_URI" and the token is in the redirected URL
+
+``` http://localhost:8080/#access_token=xxxxx.xxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxx ```
+
+To register the client follow the steps in this [Medium page](https://medium.com/@bkwebster/how-to-get-instagram-api-access-token-and-fix-your-broken-feed-c8ad470e3f02)
+
+
+References: 
+
+- [Stackoverflow post](https://stackoverflow.com/questions/16496511/how-to-get-an-instagram-access-token)
+
+- [Instagram Developer page](https://www.instagram.com/developer/)
+
+- [Official Instagram doc](https://www.instagram.com/developer/authentication/)
