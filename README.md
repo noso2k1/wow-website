@@ -60,7 +60,7 @@ Who we are - OUR VISION
 
 What kind of show we do - Why we do what we do - We push our boundaries - Experiment - Get out of our comfort zone
 
-## Get involved
+### Get involved
 
 - I have a venue and I want you to play here
 
@@ -69,6 +69,8 @@ What kind of show we do - Why we do what we do - We push our boundaries - Experi
 - I do other art forms and I want to collaborate with you
 
 ## Known problems
+
+### Terser package error
 
 On Netlify or when installing node modules the following error message might appear:
 
@@ -83,7 +85,7 @@ The solution is [here](https://github.com/webpack-contrib/terser-webpack-plugin/
 
 2. edit package-lock.json > locate: "terser-webpack-plugin" > inside it's tree: change: "terser": "^3.8.1" (or whatever), to "terser": "3.14.1" and make sure there is no “^” in front of the version
 
-### vue-instagram error when building
+#### vue-instagram error when building
 
 Code to use when [issue #21](https://github.com/kevinongko/vue-instagram/issues/21) on vue-instagram is solved
 
