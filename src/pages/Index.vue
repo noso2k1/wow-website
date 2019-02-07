@@ -113,38 +113,6 @@
         </div>
       </section>
 
-      <!-- Impressions/Instagram feed -->
-      <section class="section hero" id="impressions">
-        <div class="hero-head">
-          <div class="container">
-            <h1 class="title">Impressions from our Instagram feed</h1>
-          </div>
-        </div>
-        <div class="hero-body container">
-          <vue-instagram :token="instaToken" :count="6" class="columns is-multiline is-mobile">
-            <template slot="feeds" slot-scope="props">
-              <div class="column is-4-desktop is-6-tablet is-6-mobile">
-                <div class="card">
-                  <a class="card-image" :href="props.feed.link" target="_blank">
-                    <figure class="image is-square">
-                      <img :src="props.feed.images.standard_resolution.url" alt="Image">
-                    </figure>
-                  </a>
-                  <div class="card-content">
-                    <div class="subtitle is-6" style="height: 100px; overflow: auto;" v-html="props.feed.caption.text"/>
-                  </div>
-                </div>
-              </div>
-            </template>
-          </vue-instagram>
-        </div>
-        <div class="hero-foot level container">
-          <div class="level-item">
-            <a class="button is-dark is-medium is-fullwidth" href="https://www.instagram.com/wombatsimprov/" target="_blank">More on our Instagram</a>
-          </div>
-        </div>
-      </section>
-
       <!-- Contacts section -->
       <section class="section hero is-light" id="contact">
         <div class="hero-head">
