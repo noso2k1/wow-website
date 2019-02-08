@@ -10,7 +10,7 @@ Created with Gridsome, Bulma and headless Wordpress
 
 This website requires Wordpress with the Tribe Events Manager plugin.
 
-Install the headless theme, by copying the files from folder ```wordpress-headless-theme``` into ```wp-content/themes/blank``` of the Wordpress installation, then navigate to WordPress admin and activate this new theme.
+Install the headless theme, by copying the files from folder ```wordpress-headless-theme-wombats``` into ```wp-content/themes/headless-wombats``` of the Wordpress installation, then navigate to WordPress admin and activate this new theme.
 
 The code in functions.php enables the additional fields in the Tribe Events Manager plugin.
 
