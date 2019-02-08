@@ -6,8 +6,8 @@
         <div class="level-left">
           <div class="level-item has-text-centered">
             <div>
-              <p class="heading">{{monthNames[new Date(event.node.startDate).getMonth()]}}</p>
-              <p class="title">{{new Date(event.node.startDate).getDate()}}</p>
+              <p class="heading">{{monthNames[new Date(event.node.date).getMonth()]}}</p>
+              <p class="title">{{new Date(event.node.date).getDate()}}</p>
             </div>
           </div>
         </div>
