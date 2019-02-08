@@ -47,10 +47,17 @@
     <!-- This is where we add the page content -->
     <slot/>
 
-    <footer class="footer has-text-white">
-      <div class="content has-text-centered">
-        <p>Website design by <b>Wisdom of Wombats</b>.</p>
-        <p>Made with Bulma and Gridsome.</p>
+    <footer class="footer">
+      <div class="level content has-text-centered">
+        <div class="level-item has-text-white">
+          <p> © 2019 Wisdom of Wombats – All rights reserved.</p>
+        </div>
+        <div class="level-item">
+          <a class="icon has-text-white" href="https://www.facebook.com/wombatsimprov" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="icon has-text-white" href="https://www.instagram.com/wombatsimprov/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="icon has-text-white" href="mailto:wisdom@wombats.ch"><i class="fas fa-envelope"></i></a>
+          <a class="icon has-text-white" href="https://www.meetup.com/Pop-up-Performances/" target="_blank"><i class="fab fa-meetup"></i></a>
+        </div>
       </div>
     </footer>
 

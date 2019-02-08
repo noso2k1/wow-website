@@ -12,7 +12,7 @@ This website requires Wordpress with the Tribe Events Manager plugin.
 
 Install the headless theme, by copying the files from folder ```wordpress-headless-theme-wombats``` into ```wp-content/themes/headless-wombats``` of the Wordpress installation, then navigate to WordPress admin and activate this new theme.
 
-The code in functions.php enables the additional fields in the Tribe Events Manager plugin.
+The code in ```functions.php`` enables the additional fields in the Tribe Events Manager plugin.
 
 ## Next steps:
 
@@ -30,13 +30,13 @@ The code in functions.php enables the additional fields in the Tribe Events Mana
 
 - [ ] Are statistics updated with this solutions?
 
-- [ ] Add more comments - Find a suitable plugin with REST API
+- [ ] Add more comments - Use the WPM Testimonial plugin Endpoint (wp-json/wp/v2/wpm-testimonial)
 
 - [ ] Random top image
 
 - [ ] List of shows
 
-- [ ] Archive of previous shows
+- [ ] Archive of previous events
 
 - [ ] Review the "About us" section
 
