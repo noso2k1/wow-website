@@ -5,7 +5,7 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title" v-html="event.title" />
-          <h2 class="subtitle">{{event.startDate}}</h2>
+          <h2 class="subtitle">{{event.date}}</h2>
 
           <section class="tile is-anchestor">
             <div class="tile is-8">
@@ -14,7 +14,7 @@
             <div class="tile">
               <div class="box">
                 <h2 class="subtitle is-spaced"><b>Where:</b> <a :href="event.venueWebsite"> {{event.venueNameAddress}}</a></h2>
-                <h2 class="subtitle"><b>When:</b> {{event.startDate}} at {{event.startTime}}</h2>
+                <h2 class="subtitle"><b>When:</b> {{event.date}} at {{event.startTime}}</h2>
               </div>
             </div>
           </section>
@@ -34,7 +34,7 @@ query Event ($path: String!) {
   wordPressTribeEvents (path: $path) {
     title
     content
-    date
+    date (format: "d MMMM YYYY")
     path
     startDate
     startTime
