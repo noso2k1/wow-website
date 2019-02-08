@@ -86,7 +86,7 @@
         <div class="hero-body">
           <div class="columns">
             <div class="column is-9 is-offset-1">
-              <Calendar />
+              <calendar />
             </div>
           </div>
         </div>
@@ -108,10 +108,12 @@
         </div>
         <div class="hero-body">
           <div class="container">
-            <Stories />
+            <stories />
           </div>
         </div>
       </section>
+
+
 
       <!-- Contacts section -->
       <section class="section hero is-light" id="contact">
@@ -162,7 +164,7 @@
         </div>
 
         <div class="section">
-          <NewsletterSubscribe class="container" />
+          <newsletter-subscribe class="container" />
         </div>
 
       </section>

@@ -6,27 +6,21 @@ Created with Gridsome, Bulma and headless Wordpress
 
 **Wisdom of Wombats** is an improv theater group based in Zurich Switzerland
 
-To do before go-live:
+## Wordpress
 
-- [x] "About us" section
+This website requires Wordpress with the Tribe Events Manager plugin.
 
-- [x] "Contacts" section
+Install the headless theme, by copying the files from folder ```wordpress-headless-theme``` into ```wp-content/themes/blank``` of the Wordpress installation, then navigate to WordPress admin and activate this new theme.
 
-- [x] "News" section - List of posts (as calendar) and Posts pages
+The code in functions.php enables the additional fields in the Tribe Events Manager plugin.
 
-- [x] MailChimp, register and subscribe mail from the website
-
-Next steps:
-
-- [x] Instagram link
-
-- [x] Update Gridsome WordPress plugin
+## Next steps:
 
 - [ ] Add instagram feed - Waiting for a fix to the [vue-instagram plugin](https://github.com/kevinongko/vue-instagram/issues/21) - See below
 
 - [ ] Pagination of the "News" section
 
-- [ ] Cookies - with [this](https://github.com/promosis/vue-cookie-accept-decline) - With [this](https://github.com/apertureless/vue-cookie-law) BUILD does not work.
+- [ ] Cookies - use [this](https://github.com/promosis/vue-cookie-accept-decline) plugin - With [this](https://github.com/apertureless/vue-cookie-law) plugin, BUILD does not work.
 
 - [ ] "Get involved" section
 
@@ -36,7 +30,7 @@ Next steps:
 
 - [ ] Are statistics updated with this solutions?
 
-- [ ] Add more comments
+- [ ] Add more comments - Find a suitable plugin with REST API
 
 - [ ] Random top image
 
@@ -50,11 +44,23 @@ Next steps:
 
 - [ ] Manage differently carousel and video in the insta feed
 
+- [x] "About us" section
+
+- [x] "Contacts" section
+
+- [x] "News" section - List of posts (as calendar) and Posts pages
+
+- [x] MailChimp, register and subscribe mail from the website
+
+- [x] Instagram link
+
+- [x] Update Gridsome WordPress plugin
+
 - [ ] ~~Gallery of images~~
 
 - [ ] ~~Make "Next show" a component~~
 
-## Ideas for content:
+## Ideas for content
 
 Who we are - OUR VISION
 

@@ -10,7 +10,7 @@ module.exports = {
     {
       use: '@gridsome/source-wordpress-event',
       options: {
-        baseUrl: 'http://test.wombats.ch',
+        baseUrl: 'http://wombats.ch',
         typeName: 'WordPress',
         perPage: 100,
         concurrent: 10,
