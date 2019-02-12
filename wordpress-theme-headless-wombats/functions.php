@@ -48,3 +48,10 @@ function slug_get_event_details( $object, $field_name, $request ) {
 	return $output;
 
 }
+
+/* Add Featured Image Support To Your WordPress Theme */
+function add_featured_image_support() {
+	add_theme_support( 'post-thumbnails' );
+}
+ 
+add_action( 'after_setup_theme', 'add_featured_image_support' );
