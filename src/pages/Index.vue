@@ -7,7 +7,7 @@
         <div class="hero-body">
           <div class="container has-text-centered">
             <h1 class="title">
-              Wisdom of Wombats CIAO!
+              Wisdom of Wombats
             </h1>
             <h2 class="subtitle">
               Finest improv in English in Zurich
@@ -32,7 +32,7 @@
             <a class="column home-link-item" href="#" v-scroll-to="'#stories'">
               <div class="section">
                 <h1 class="title">Our stories</h1>
-                <h2 class="subtitle">Discover more about us</h2>
+                <h2 class="subtitle">Discover what we do</h2>
               </div>
             </a>
             <a class="column home-link-item" href="#" v-scroll-to="'#about'">
