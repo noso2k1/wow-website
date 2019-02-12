@@ -29,10 +29,10 @@
                 <h2 class="subtitle"><span>{{nextShow.date}} @ {{nextShow.venueName}}</span></h2>
               </div>
             </a>
-            <a class="column home-link-item" href="#" v-scroll-to="'#calendar'">
+            <a class="column home-link-item" href="#" v-scroll-to="'#stories'">
               <div class="section">
-                <h1 class="title">All shows</h1>
-                <h2 class="subtitle">Check all our shows out</h2>
+                <h1 class="title">Our stories</h1>
+                <h2 class="subtitle">Discover more about us</h2>
               </div>
             </a>
             <a class="column home-link-item" href="#" v-scroll-to="'#about'">
@@ -205,7 +205,7 @@ query Events {
     edges {
       node {
         title
-        date (format: "d MMMM YYYY")
+        date (format: "D MMMM YYYY")
         venueName
         path
       }

@@ -47,6 +47,11 @@
     <!-- This is where we add the page content -->
     <slot/>
 
+    <!-- Slide up the newsletter subscribe form -->
+    <!-- 
+      <div id="nlPopup" v-bind:style="{'display':nlSlideUpDisplay}" v-on:close-popup="nlSlideUpDisplay='none'"><newsletter-subscribe-popup /></div> 
+    -->
+
     <footer class="footer">
       <div class="level content has-text-centered">
         <div class="level-item has-text-white">
@@ -73,11 +78,16 @@ query {
 </static-query>
 
 <script>
+import NewsletterSubscribePopup from '~/components/NewsletterSubscribePopup.vue'
 export default {
+  components: {
+    NewsletterSubscribePopup
+  },
   data: function() {
     return {
       burgerActive: false,
-      btnToTopDisplay: 'none'
+      btnToTopDisplay: 'none',
+      nlSlideUpDisplay: 'block'
     }
   },
   props: ['homepage'],
@@ -111,4 +121,47 @@ export default {
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
   }
+
+#nlPopup {
+  position: fixed;
+  width: 30%;
+  left: 20px;
+  bottom: -100%;
+  z-index: 99;
+  -webkit-animation-name: nlSlideUp; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+  -webkit-animation-delay: 0s;
+  animation-name: nlSlideUp;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-delay: 0s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes nlSlideUp {
+  from {bottom: -100%;}
+  to {bottom: 0%;}
+}
+
+/* Standard syntax */
+@keyframes nlSlideUp {
+  from {bottom: -100%;}
+  to {bottom: 0%;}
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
 </style>

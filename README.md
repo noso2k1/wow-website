@@ -18,6 +18,8 @@ The code in ```functions.php`` enables the additional fields in the Tribe Events
 
 - [ ] Add instagram feed - Waiting for a fix to the [vue-instagram plugin](https://github.com/kevinongko/vue-instagram/issues/21) - See below
 
+- [ ] Manage differently carousel and video in the insta feed
+
 - [ ] Pagination of the "News" section
 
 - [ ] Cookies - use [this](https://github.com/promosis/vue-cookie-accept-decline) plugin - With [this](https://github.com/apertureless/vue-cookie-law) plugin, BUILD does not work.
@@ -30,7 +32,7 @@ The code in ```functions.php`` enables the additional fields in the Tribe Events
 
 - [ ] Are statistics updated with this solutions?
 
-- [ ] Add more comments - Use the WPM Testimonial plugin Endpoint (wp-json/wp/v2/wpm-testimonial)
+- [ ] Add more comments - Use WPM Testimonial plugin Endpoint (wp-json/wp/v2/wpm-testimonial)
 
 - [ ] Random top image
 
@@ -41,8 +43,6 @@ The code in ```functions.php`` enables the additional fields in the Tribe Events
 - [ ] Review the "About us" section
 
 - [ ] Messages in case of no events or no news
-
-- [ ] Manage differently carousel and video in the insta feed
 
 - [x] "About us" section
 

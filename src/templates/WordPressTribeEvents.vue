@@ -34,7 +34,7 @@ query Event ($path: String!) {
   wordPressTribeEvents (path: $path) {
     title
     content
-    date (format: "d MMMM YYYY")
+    date (format: "D MMMM YYYY")
     path
     startDate
     startTime
