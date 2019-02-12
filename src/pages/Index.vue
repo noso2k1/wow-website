@@ -7,7 +7,7 @@
         <div class="hero-body">
           <div class="container has-text-centered">
             <h1 class="title">
-              Wisdom of Wombats
+              Wisdom of Wombats CIAO!
             </h1>
             <h2 class="subtitle">
               Finest improv in English in Zurich
