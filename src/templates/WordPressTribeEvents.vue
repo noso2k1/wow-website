@@ -51,10 +51,23 @@ query Event ($path: String!) {
 
 <script>
 export default {
-  data: function() {
-    return {
-    }
-  },
+  data: function() { return {} },
+  metaInfo() {
+    return{
+      title: this.$page.wordPressTribeEvents.title,
+      script: [{
+        key: 'owaTrackerCode',
+        innerHTML: `//<![CDATA[
+          var owa_baseUrl = 'https://wombats.ch/owa/';
+          var owa_cmds = owa_cmds || [];
+          owa_cmds.push(['setSiteId', '7c4439b1f96509791a4d3967c4a64176']);
+          owa_cmds.push(['trackPageView']);
+          owa_cmds.push(['trackClicks']);
+          owa_cmds.push(['setPageType','event']);
+          //]]>`,
+        type:"text/javascript"
+      }]
+  }},
   computed: {
     event: function() {
       let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
