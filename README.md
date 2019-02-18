@@ -30,8 +30,6 @@ The code in ```functions.php`` enables the additional fields in the Tribe Events
 
 - [ ] Page with the group members
 
-- [ ] Are statistics updated with this solutions?
-
 - [ ] Add more comments - Use WPM Testimonial plugin Endpoint (wp-json/wp/v2/wpm-testimonial)
 
 - [ ] Random top image
@@ -43,6 +41,8 @@ The code in ```functions.php`` enables the additional fields in the Tribe Events
 - [ ] Review the "About us" section
 
 - [ ] Messages in case of no events or no news
+
+- [x] Website Statistics - Open Website Analysis
 
 - [x] "About us" section
 
