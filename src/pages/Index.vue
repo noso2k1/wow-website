@@ -186,23 +186,24 @@ export default {
   },
   // 7c4439b1f96509791a4d3967c4a64176  -> official site ID
   // 37d007a56d816107ce5b52c10342db37  -> test site ID
-  metaInfo: {
+  metaInfo() { return {
+    title: 'Home',
     script: [
       {
         key: 'owaTrackerCode',
         innerHTML: `//<![CDATA[
           var owa_baseUrl = 'https://wombats.ch/owa/';
           var owa_cmds = owa_cmds || [];
-          owa_cmds.push(['setSiteId', '7c4439b1f96509791a4d3967c4a64176']);
+          owa_cmds.push(['setSiteId', '37d007a56d816107ce5b52c10342db37']);
           owa_cmds.push(['setPageType','home'])
           owa_cmds.push(['trackPageView']);
           owa_cmds.push(['trackClicks']);
           //]]>`,
         type:"text/javascript"
       }
-    ]
+    ]}
   },
-  data: function () {
+  data() {
     return {
       instaToken: '10835943873.7115bff.19834ca1a1114f5c91b2c3b9577d008f'
      }
