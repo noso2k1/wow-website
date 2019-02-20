@@ -11,7 +11,7 @@
           <p class="heading " v-html="story.node.date" />
           <g-link :to="story.node.path"><p class="title " v-html="story.node.title" /></g-link>
           <p class="content " v-html="story.node.excerpt" />
-          <g-link class="button is-info" :to="story.node.path">Read mode</g-link>
+          <g-link class="button is-info" :to="story.node.path">Read more</g-link>
         </div>
       </div>
     </div>

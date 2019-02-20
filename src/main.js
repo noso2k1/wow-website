@@ -19,6 +19,24 @@ export default function (Vue, {router, head, isClient}) {
     src: 'https://wombats.ch/owa/modules/base/js/owa.tracker-combined-min.js',
     async: true
   }),
+  head.script.push({
+    innerHTML: `
+      <!-- Facebook Pixel Code -->
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '327161094587034'); 
+      fbq('track', 'PageView');  
+      `
+  }),
+  head.noscript.push({
+    innerHTML: `<img height="1" width="1" src="https://www.facebook.com/tr?id=327161094587034&ev=PageView &noscript=1"/>`
+  }),
   Vue.use(VueScrollTo, {
     offset:-65
   })
