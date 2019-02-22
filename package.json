@@ -8,8 +8,13 @@
   },
   "dependencies": {
     "@gridsome/source-wordpress-event": "https://github.com/noso2k1/source-wordpress-event/tarball/master",
+    "ajv": "^6.9.1",
     "better-queue": "^3.8.10",
-    "gridsome": "^0.4.6",
+    "gridsome": "^0.5.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "mozjpeg": "^6.0.1",
+    "pngquant-bin": "^5.0.2",
+    "vue-cookie": "^1.1.4",
     "vue-cookie-accept-decline": "^5.1.0",
     "vue-instagram": "^2.0.1",
     "vue-scrollto": "^2.13.0"

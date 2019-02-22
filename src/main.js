@@ -3,6 +3,7 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
+import VueCookie from 'vue-cookie'
 // import VueInstagram from 'vue-instagram'
 import '~/assets/scss/styles.scss'
 
@@ -20,6 +21,7 @@ export default function (Vue, {router, head, isClient}) {
     async: true
   }),
   head.script.push({
+    key: 'pixelCode',
     innerHTML: `
       <!-- Facebook Pixel Code -->
       !function(f,b,e,v,n,t,s)
@@ -35,10 +37,12 @@ export default function (Vue, {router, head, isClient}) {
       `
   }),
   head.noscript.push({
+    key: 'pixelCodeNoScript',
     innerHTML: `<img height="1" width="1" src="https://www.facebook.com/tr?id=327161094587034&ev=PageView &noscript=1"/>`
   }),
   Vue.use(VueScrollTo, {
     offset:-65
   })
+  Vue.use(VueCookie)
   // Vue.use(VueInstagram)
 }

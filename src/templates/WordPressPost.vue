@@ -45,7 +45,7 @@ export default {
         innerHTML: `//<![CDATA[
           var owa_baseUrl = 'https://wombats.ch/owa/';
           var owa_cmds = owa_cmds || [];
-          owa_cmds.push(['setSiteId', '7c4439b1f96509791a4d3967c4a64176']);
+          owa_cmds.push(['setSiteId', '` + process.env.GRIDSOME_OWA_SITE_ID + `']);
           owa_cmds.push(['setPageType','post'])
           owa_cmds.push(['trackPageView']);
           owa_cmds.push(['trackClicks']);

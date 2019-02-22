@@ -42,7 +42,7 @@ query Event ($path: String!) {
     venueNameAddress
     venueWebsite
     featuredMedia {
-      url (width: 100 height: 100 quality:10 fit:inside)
+      url
     }
     slug
   }
@@ -61,7 +61,7 @@ export default {
           innerHTML: `//<![CDATA[
             var owa_baseUrl = 'https://wombats.ch/owa/';
             var owa_cmds = owa_cmds || [];
-            owa_cmds.push(['setSiteId', '7c4439b1f96509791a4d3967c4a64176']);
+            owa_cmds.push(['setSiteId', '` + process.env.GRIDSOME_OWA_SITE_ID + `']);
             owa_cmds.push(['setPageType','event'])
             owa_cmds.push(['trackPageView']);
             owa_cmds.push(['trackClicks']);

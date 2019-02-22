@@ -1,5 +1,5 @@
 <template>
-  <Layout :homepage="true">
+  <Layout :homepage="true" class="is-clipped">
     
     <!-- Main section -->
     <section class="hero is-fullheight-with-navbar home-img is-dark">
@@ -120,7 +120,7 @@
         <div class="hero-head">
           <div class="container">
             <h1 class="title">Let's connect</h1>
-            <h2 class="subtitle">Do you want to keep in touch with us? Here's how</h2>
+            <h2 class="subtitle">Do you want to keep in touch with us? Here's how.</h2>
           </div>
         </div>
 
@@ -169,6 +169,12 @@
 
       </section>
 
+
+      <div class="modal" v-bind:class="{'is-active': popupNewsletter}" v-on:click="popupClickOutside">
+        <newsletter-subscribe-modal v-on:close-popup="closePopupNewsletter" />
+      </div>
+
+
   </Layout>
 </template>
 
@@ -176,16 +182,16 @@
 import Calendar from '~/components/Calendar.vue'
 import Stories from '~/components/Stories.vue'
 import NewsletterSubscribe from '~/components/NewsletterSubscribe.vue'
+import NewsletterSubscribeModal from '~/components/NewsletterSubscribeModal.vue'
 
 export default {
   name: "Home",
   components: {
     Calendar,
     Stories,
-    NewsletterSubscribe
+    NewsletterSubscribe,
+    NewsletterSubscribeModal
   },
-  // 7c4439b1f96509791a4d3967c4a64176  -> official site ID
-  // 37d007a56d816107ce5b52c10342db37  -> test site ID
   metaInfo() { return {
     title: 'Home',
     script: [
@@ -194,7 +200,7 @@ export default {
         innerHTML: `//<![CDATA[
           var owa_baseUrl = 'https://wombats.ch/owa/';
           var owa_cmds = owa_cmds || [];
-          owa_cmds.push(['setSiteId', '7c4439b1f96509791a4d3967c4a64176']);
+          owa_cmds.push(['setSiteId', '` + process.env.GRIDSOME_OWA_SITE_ID + `']);
           owa_cmds.push(['setPageType','home'])
           owa_cmds.push(['trackPageView']);
           owa_cmds.push(['trackClicks']);
@@ -205,8 +211,28 @@ export default {
   },
   data() {
     return {
-      instaToken: '10835943873.7115bff.19834ca1a1114f5c91b2c3b9577d008f'
+      instaToken: '10835943873.7115bff.19834ca1a1114f5c91b2c3b9577d008f',
+      popupNewsletter: false
      }
+  },
+  methods: {
+    activatePopupNewsletter() {
+      if (!this.$cookie.get('popupShown')){
+        setTimeout(()=>{
+          this.popupNewsletter = true
+        }, 10000)
+      }
+    },
+    closePopupNewsletter() {
+      this.popupNewsletter = false
+      //Set a cookie to avoid to show the popup to a returning user - expires in 5 days
+      this.$cookie.set('popupShown', true, 5)
+    },
+    popupClickOutside(event){
+      if (event.target.id == 'popup-bkg') {
+        this.closePopupNewsletter()
+      }
+    }
   },
   computed: {
     nextShow: function() {
@@ -214,6 +240,9 @@ export default {
         return this.$static.events.edges[0].node
       }
     }
+  },
+  mounted() {
+    this.activatePopupNewsletter()
   }
 }
 </script>
