@@ -19,14 +19,15 @@
     "vue-cookie": "^1.1.4",
     "vue-cookie-accept-decline": "^5.1.0",
     "vue-instagram": "^2.0.1",
-    "vue-scrollto": "^2.13.0",
-    "vue-template-compiler": "^2.6.7"
+    "vue-scrollto": "^2.13.0"
   },
   "devDependencies": {
     "bulma": "^0.7.2",
     "bulma-extensions": "^4.0.1",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
-    "terser": "3.14.1"
+    "terser": "3.14.1",
+    "vue-server-renderer": "^2.6.7",
+    "vue-template-compiler": "^2.6.7"
   }
 }

@@ -4,7 +4,7 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
 import VueCookie from 'vue-cookie'
-import VueCarousel from '@chenfengyuan/vue-carousel'
+// import VueCarousel from '@chenfengyuan/vue-carousel'
 // import VueInstagram from 'vue-instagram'
 import '~/assets/scss/styles.scss'
 
@@ -45,6 +45,6 @@ export default function (Vue, {router, head, isClient}) {
     offset:-65
   })
   Vue.use(VueCookie)
-  Vue.use(VueCarousel)
+  // Vue.use(VueCarousel)
   // Vue.use(VueInstagram)
 }
