@@ -74,6 +74,15 @@
         </div>
       </section>
 
+      <!-- VueCarousel https://github.com/fengyuanchen/vue-carousel
+      <section class="hero is-primary is-medium">
+        <div class="hero-body">
+          <div class="container">
+            <carousel :data="carouselData"></carousel>
+          </div>
+        </div>
+      </section> -->
+
       <!-- Calendar section -->
       <section class="section hero is-light" id="calendar">
         <div class="hero-head">
@@ -212,7 +221,12 @@ export default {
   data() {
     return {
       instaToken: '10835943873.7115bff.19834ca1a1114f5c91b2c3b9577d008f',
-      popupNewsletter: false
+      popupNewsletter: false,
+      carouselData: [
+          '<div class="example-slide">Slide 1</div>',
+          '<div class="example-slide">Slide 2</div>',
+          '<div class="example-slide">Slide 3</div>'
+      ]
      }
   },
   methods: {
