@@ -26,7 +26,7 @@
             <a class="column home-link-item" :href="nextShow.path">
              <div class="section">
                 <h1 class="title">Next show</h1>
-                <h2 class="subtitle"><span>{{nextShow.date}} @ {{nextShow.venueName}}</span></h2>
+                <h2 class="subtitle"><span>{{nextShow.title}} on {{nextShow.date}}</span></h2>
               </div>
             </a>
             <a class="column home-link-item" href="#" v-scroll-to="'#stories'">
@@ -122,8 +122,6 @@
         </div>
       </section>
 
-
-
       <!-- Contacts section -->
       <section class="section hero is-light" id="contact">
         <div class="hero-head">
@@ -183,6 +181,10 @@
         <newsletter-subscribe-modal v-on:close-popup="closePopupNewsletter" />
       </div>
 
+      <!--<section class="section">
+        <next-show />
+      </section> -->
+
 
   </Layout>
 </template>
@@ -192,6 +194,7 @@ import Calendar from '~/components/Calendar.vue'
 import Stories from '~/components/Stories.vue'
 import NewsletterSubscribe from '~/components/NewsletterSubscribe.vue'
 import NewsletterSubscribeModal from '~/components/NewsletterSubscribeModal.vue'
+// import NextShow from '~/components/NextShow.vue'
 
 export default {
   name: "Home",
@@ -199,7 +202,8 @@ export default {
     Calendar,
     Stories,
     NewsletterSubscribe,
-    NewsletterSubscribeModal
+    NewsletterSubscribeModal,
+    // NextShow
   },
   metaInfo() { return {
     title: 'Home',
