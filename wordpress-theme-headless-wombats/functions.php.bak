@@ -48,3 +48,42 @@ function slug_get_event_details( $object, $field_name, $request ) {
 	return $output;
 
 }
+
+/* Add Featured Image Support To Your WordPress Theme */
+function add_featured_image_support() {
+	add_theme_support( 'post-thumbnails' );
+
+	add_theme_support( 'responsive-embeds' );
+
+
+	
+// Add theme support for selective refresh for widgets.
+
+	add_theme_support( 'customize-selective-refresh-widgets' );
+
+
+
+	// Add support for Block Styles.
+
+	add_theme_support( 'wp-block-styles' );
+
+
+
+	// Add support for full and wide align images.
+
+	add_theme_support( 'align-wide' );
+
+
+
+	// Add support for editor styles.
+
+	add_theme_support( 'editor-styles' );
+
+
+
+	// Enqueue editor styles.
+
+	add_editor_style( 'style-editor.css' );
+}
+ 
+add_action( 'after_setup_theme', 'add_featured_image_support' );
