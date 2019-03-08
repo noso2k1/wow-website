@@ -62,9 +62,6 @@ query Events {
         startDate
         startTime
         path
-        featuredMedia {
-          url
-        }
         slug
       }
     }

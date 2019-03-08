@@ -14,7 +14,7 @@
     </div>
 
     <div class="section has-text-centered">
-      <g-image v-if="$page.wordPressPost.featuredMedia" :src="$page.wordPressPost.featuredMedia.url" width="800" />
+      <g-image v-if="$page.wordPressPost.featuredMedia" :src="$page.wordPressPost.featuredMedia.sourceUrl" width="800" />
     </div>
   </Layout>
 </template>
@@ -25,7 +25,7 @@ query Post ($path: String!) {
     title
     content
     featuredMedia {
-      url
+      sourceUrl
     }
     id
     title

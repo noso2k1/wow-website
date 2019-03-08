@@ -41,10 +41,11 @@ function slug_get_event_details( $object, $field_name, $request ) {
 	$output[ 'eventId' ]          = (float) $object[ 'id' ];
 	$output[ 'venueName' ]        = (string) tribe_get_venue($object[ 'id' ]);
 	$output[ 'venueNameAddress' ] = (string) tribe_get_venue_single_line_address($object[ 'id' ], false);
-	$output[ 'venueFullAddress' ] = (string) tribe_get_full_address($object[ 'id'], true);
-	$output[ 'venueAddress' ]     = (string) tribe_get_address($object[ 'id']);
+	$output[ 'venueFullAddress' ] = (string) tribe_get_full_address($object[ 'id' ], true);
+	$output[ 'venueAddress' ]     = (string) tribe_get_address($object[ 'id' ]);
+	$output[ 'venueCity' ]		  = (string) tribe_get_city($object[ 'id' ]);
 	$output[ 'venueWebsite' ]     = (string) tribe_get_venue_website_url($object[ 'id' ]);
-	$output[ 'startDate' ]        = (string) tribe_get_start_date($object[ 'id' ], false, 'Y-m-d H:i');
+	$output[ 'startDate' ]        = (string) tribe_get_start_date($object[ 'id' ], false, 'Y-m-d\TH:i:s');
 	$output[ 'startTime' ]        = (string) tribe_get_start_date($object[ 'id' ], false, 'H:i:s');
 
 	return $output;

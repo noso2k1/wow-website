@@ -4,7 +4,7 @@
       <div class="columns">
         <div class="column is-4">
           <g-link :to="story.node.path">
-            <g-image v-if="story.node.featuredMedia" :src="story.node.featuredMedia.url" />
+            <g-image v-if="story.node.featuredMedia" :src="story.node.featuredMedia.sourceUrl" />
           </g-link>
         </div>
         <div class="column">
@@ -33,7 +33,7 @@ query Stories {
         id
         slug
         featuredMedia{
-          url
+          sourceUrl
         }
         path
         date (format: "MMMM, D YYYY")

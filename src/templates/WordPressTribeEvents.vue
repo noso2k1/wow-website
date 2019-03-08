@@ -13,13 +13,13 @@
             </div>
             <div class="tile">
               <div class="box">
-                <h2 class="subtitle is-spaced"><b>Where:</b> <a :href="event.venueWebsite"> {{event.venueNameAddress}}</a></h2>
+                <h2 class="subtitle is-spaced"><b>Where:</b> <a :href="event.venueWebsite"> {{event.venueName}}</a><span v-html="event.venueFullAddress" /></h2>
                 <h2 class="subtitle"><b>When:</b> {{event.date}} at {{event.startTime}}</h2>
               </div>
             </div>
           </section>
           <div class="section has-text-centered">
-            <g-image v-if="event.featuredMedia" :src="event.featuredMedia.url" width="800" />
+            <g-image v-if="event.featuredMedia" :src="event.featuredMedia.sourceUrl" width="800" />
           </div>
 
         </div>
@@ -41,8 +41,9 @@ query Event ($path: String!) {
     venueName
     venueNameAddress
     venueWebsite
+    venueFullAddress
     featuredMedia {
-      url
+      sourceUrl
     }
     slug
   }
