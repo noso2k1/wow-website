@@ -23,12 +23,13 @@
         <!-- Hero footer: will stick at the bottom -->
         <footer class="hero-foot">
           <nav class="columns home-link">
-            <a class="column home-link-item" :href="nextShow.path">
+            <!--<a class="column home-link-item" :href="nextShow.path">
              <div class="section">
                 <h1 class="title">Next show</h1>
                 <h2 class="subtitle"><span>{{nextShow.title}} on {{nextShow.date}}</span></h2>
               </div>
-            </a>
+            </a>-->
+            <next-show />
             <a class="column home-link-item" href="#" v-scroll-to="'#stories'">
               <div class="section">
                 <h1 class="title">Our stories</h1>
@@ -181,9 +182,9 @@
         <newsletter-subscribe-modal v-on:close-popup="closePopupNewsletter" />
       </div>
 
-      <!--<section class="section">
+      <section class="section">
         <next-show />
-      </section> -->
+      </section>
 
 
   </Layout>
@@ -194,7 +195,7 @@ import Calendar from '~/components/Calendar.vue'
 import Stories from '~/components/Stories.vue'
 import NewsletterSubscribe from '~/components/NewsletterSubscribe.vue'
 import NewsletterSubscribeModal from '~/components/NewsletterSubscribeModal.vue'
-// import NextShow from '~/components/NextShow.vue'
+import NextShow from '~/components/NextShow.vue'
 
 export default {
   name: "Home",
@@ -203,7 +204,7 @@ export default {
     Stories,
     NewsletterSubscribe,
     NewsletterSubscribeModal,
-    // NextShow
+    NextShow
   },
   metaInfo() { return {
     title: 'Home',
