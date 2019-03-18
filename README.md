@@ -16,8 +16,6 @@ The code in ```functions.php``` enables the additional fields in the Tribe Event
 
 ## Next steps:
 
-- [ ] Create 404 page
-
 - [ ] Add instagram feed - Waiting for a fix to the [vue-instagram plugin](https://github.com/kevinongko/vue-instagram/issues/21) - See below
 
 - [ ] Manage differently carousel and video in the insta feed
@@ -43,6 +41,8 @@ The code in ```functions.php``` enables the additional fields in the Tribe Event
 - [ ] Review the "About us" section
 
 - [ ] Messages in case of no events or no news
+
+- [x] Create 404 page
 
 - [x] Make the homepage link to the next show dynamic
 

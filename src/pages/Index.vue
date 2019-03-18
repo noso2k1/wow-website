@@ -182,11 +182,6 @@
         <newsletter-subscribe-modal v-on:close-popup="closePopupNewsletter" />
       </div>
 
-      <section class="section">
-        <next-show />
-      </section>
-
-
   </Layout>
 </template>
 

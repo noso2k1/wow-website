@@ -29,7 +29,8 @@ export default {
                 .then(response => {
                     let events = response.data
                     events.sort(function(a,b){
-                        if (a.eventDetails.startDate > b.eventDetails.startDate) return 1
+                        // if (new Date(a.eventDetails.startDate) > new Date(b.eventDetails.startDate)) return 1
+                        return new Date(a.eventDetails.startDate) - new Date(b.eventDetails.startDate)
                     })
                     if (events.length > 0) {
                         let event = events[0]
