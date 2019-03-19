@@ -13,10 +13,10 @@ export default function (Vue, {router, head, isClient}) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   head.bodyAttrs = { class: 'has-navbar-fixed-top', id:'top' }
-  head.link.push({
-    rel:'stylesheet',
-    href:'https://use.fontawesome.com/releases/v5.6.3/css/all.css'
-  }),
+  //head.link.push({
+  //  rel:'stylesheet',
+  //  href:'https://use.fontawesome.com/releases/v5.6.3/css/all.css'
+  //}),
   head.script.push({
     key: 'owaScript',
     src: 'https://wombats.ch/owa/modules/base/js/owa.tracker-combined-min.js',
