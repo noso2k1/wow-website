@@ -8,6 +8,10 @@
   },
   "dependencies": {
     "@chenfengyuan/vue-carousel": "^1.0.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-brands-svg-icons": "^5.7.2",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
     "@gridsome/source-wordpress-event": "https://github.com/noso2k1/source-wordpress-event/tarball/master",
     "ajv": "^6.9.1",
     "axios": "^0.18.0",
@@ -21,7 +25,8 @@
     "vue-cookie-accept-decline": "^5.1.0",
     "vue-instagram": "^2.0.1",
     "vue-moment": "^4.0.0",
-    "vue-scrollto": "^2.13.0"
+    "vue-scrollto": "^2.13.0",
+    "vue-svg-loader": "^0.12.0"
   },
   "devDependencies": {
     "bulma": "^0.7.2",

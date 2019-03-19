@@ -1,7 +1,10 @@
 <template>
   <div class="layout">
     <a class="button is-text has-text-primary" id="btnToTop" href="#" v-scroll-to="'#top'" v-bind:style="{display: btnToTopDisplay}">
-      <span class="icon"><i class="fas fa-chevron-circle-up fa-lg"></i></span><span>Back to top</span>
+      <span class="icon">
+        <!--<i class="fas fa-chevron-circle-up fa-lg"></i>-->
+        <font-awesome :icon="['fas','chevron-circle-up']" :size="'lg'" />
+      </span><span>Back to top</span>
     </a>
     <header class="navbar is-fixed-top is-primary">
       <div class="navbar-brand">
@@ -24,8 +27,8 @@
           <a class="navbar-item" v-scroll-to="'#stories'" v-on:click="toggleBurger()">Stories</a>
           <!--<a class="navbar-item" v-scroll-to="'#impressions'" v-on:click="toggleBurger()">Impressions</a>-->
           <a class="navbar-item" v-scroll-to="'#contact'" v-on:click="toggleBurger()">Let's connect</a>
-          <a class="navbar-item" href="https://www.facebook.com/wombatsimprov" target="_blank"><span class="icon"><i class="fab fa-facebook-f"></i></span></a>
-          <a class="navbar-item" href="https://www.instagram.com/wombatsimprov/" target="_blank"><span class="icon"><i class="fab fa-instagram"></i></span></a>
+          <a class="navbar-item" href="https://www.facebook.com/wombatsimprov" target="_blank"><span class="icon"><font-awesome :icon="['fab','facebook-f']" /></span></a>
+          <a class="navbar-item" href="https://www.instagram.com/wombatsimprov/" target="_blank"><span class="icon"><font-awesome :icon="['fab','instagram']" /></span></a>
           <a class="navbar-item" href="mailto:wisdom@wombats.ch"><span class="icon"><i class="fas fa-envelope"></i></span></a>
         </div>
       </div>
@@ -37,9 +40,9 @@
           <a class="navbar-item" href="/#stories">Stories</a>
           <a class="navbar-item" href="/#contact">Let's connect</a>
           <!--<a class="navbar-item" href="/#impressions">Impressions</a>-->
-          <a class="navbar-item" href="https://www.facebook.com/wombatsimprov" target="_blank"><span class="icon"><i class="fab fa-facebook-f"></i></span></a>
-          <a class="navbar-item" href="https://www.instagram.com/wombatsimprov/" target="_blank"><span class="icon"><i class="fab fa-instagram"></i></span></a>
-          <a class="navbar-item" href="mailto:wisdom@wombats.ch"><span class="icon"><i class="fas fa-envelope"></i></span></a>
+          <a class="navbar-item" href="https://www.facebook.com/wombatsimprov" target="_blank"><span class="icon"><font-awesome :icon="['fab','facebook-f']" /></span></a>
+          <a class="navbar-item" href="https://www.instagram.com/wombatsimprov/" target="_blank"><span class="icon"><font-awesome :icon="['fab','instagram']" /></span></a>
+          <a class="navbar-item" href="mailto:wisdom@wombats.ch"><span class="icon"><font-awesome :icon="['fas','envelope']" /></span></a>
         </div>
       </div>
     </header>
@@ -58,10 +61,10 @@
           <p> © 2019 Wisdom of Wombats – All rights reserved.</p>
         </div>
         <div class="level-item">
-          <a class="icon has-text-white" href="https://www.facebook.com/wombatsimprov" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a class="icon has-text-white" href="https://www.instagram.com/wombatsimprov/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a class="icon has-text-white" href="mailto:wisdom@wombats.ch"><i class="fas fa-envelope"></i></a>
-          <a class="icon has-text-white" href="https://www.meetup.com/Pop-up-Performances/" target="_blank"><i class="fab fa-meetup"></i></a>
+          <a class="icon has-text-white" href="https://www.facebook.com/wombatsimprov" target="_blank"><font-awesome :icon="['fab','facebook-f']" /></a>
+          <a class="icon has-text-white" href="https://www.instagram.com/wombatsimprov/" target="_blank"><font-awesome :icon="['fab','instagram']" /></a>
+          <a class="icon has-text-white" href="mailto:wisdom@wombats.ch"><font-awesome :icon="['fas','envelope']" /></a>
+          <a class="icon has-text-white" href="https://www.meetup.com/Pop-up-Performances/" target="_blank"><font-awesome :icon="['fab','meetup']" /></a>
         </div>
       </div>
     </footer>

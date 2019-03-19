@@ -136,35 +136,35 @@
           <div class="level container">
             <a class="level-item has-text-centered" href="mailto:wisdom@wombats.ch">
               <div>
-                <p class="icon has-text-dark"><i class="fas fa-envelope fa-4x"></i></p>
+                <p class="icon has-text-dark"><font-awesome :icon="['fas','envelope']" :size="'4x'" /></p>
                 <p>Drop us an email</p>
                 <p class="is-uppercase has-text-weight-bold">wisdom@wombats.ch</p>
               </div>
             </a>
             <a class="level-item has-text-centered" href="https://www.facebook.com/wombatsimprov" target="_blank">
               <div>
-                <p class="icon has-text-dark"><i class="fab fa-facebook-square fa-4x"></i></p>
+                <p class="icon has-text-dark"><font-awesome :icon="['fab', 'facebook-square']" :size="'4x'" /></p>
                 <p>Like us on Facebook</p>
                 <p class="is-uppercase has-text-weight-bold">@WombatsImprov</p>
               </div>
             </a>
             <a class="level-item has-text-centered" href="https://www.instagram.com/wombatsimprov/" target="_blank">
               <div>
-                <p class="icon has-text-dark"><i class="fab fa-instagram fa-4x"></i></p>
+                <p class="icon has-text-dark"><font-awesome :icon="['fab', 'instagram']" :size="'4x'" /></p>
                 <p>Follow us on Instagram</p>
                 <p class="is-uppercase has-text-weight-bold">@WombatsImprov</p>
               </div>
             </a>
             <a class="level-item has-text-centered" href="https://www.meetup.com/Pop-up-Performances/" target="_blank">
               <div>
-                <p class="icon has-text-dark"><i class="fab fa-meetup fa-4x"></i></p>
+                <p class="icon has-text-dark"><font-awesome :icon="['fab', 'meetup']" :size="'4x'" /></p>
                 <p>Join our Meetup group</p>
                 <p class="is-uppercase has-text-weight-bold">Pop up Performances</p>
               </div>
             </a>
             <a class="level-item has-text-centered" href="#" v-scroll-to="'#calendar'">
               <div>
-                <p class="icon has-text-dark"><i class="fas fa-grin fa-4x"></i></p>
+                <p class="icon has-text-dark"><font-awesome :icon="['fas','grin']" :size="'4x'" /></p>
                 <p>Meet us in person!</p>
               </div>
             </a>
