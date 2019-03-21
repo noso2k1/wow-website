@@ -79,13 +79,6 @@ export default {
       nlSlideUpDisplay: 'block'
     }
   },
-  metaInfo() { return {
-    meta: [{
-      key: 'keywords',
-      name: 'keywords',
-      content: 'improv,zurich,comedy,theater,theatre,improvisation,spontaneity,stage,bühne,impro,show,popup,switzerland,schweyz,live,performance'
-    }]
-  }},
   props: ['homepage'],
   mounted() {
     window.addEventListener('scroll', this.handleScroll);

@@ -217,6 +217,11 @@ export default {
         type:"text/javascript"
       }
     ],
+    link: [{
+      key: 'canonical',
+      rel: 'canonical',
+      href: 'https://wombats.ch'
+    }]
   }},
   data() {
     return {

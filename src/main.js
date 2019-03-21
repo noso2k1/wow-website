@@ -38,6 +38,12 @@ export default function (Vue, {router, head, isClient}) {
     key: 'pixelCodeNoScript',
     innerHTML: `<img height="1" width="1" src="https://www.facebook.com/tr?id=327161094587034&ev=PageView &noscript=1"/>`
   })
+  // <link rel="canonical" href="http://example.com/">
+  head.meta.push({
+    key: 'keywords',
+    name: 'keywords',
+    content: 'improv,zurich,comedy,theater,theatre,improvisation,spontaneity,stage,bühne,impro,show,popup,switzerland,schweyz,live,performance'
+  })
   Vue.use(VueScrollTo, {
     offset:-65
   })
