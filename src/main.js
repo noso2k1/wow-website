@@ -42,7 +42,7 @@ export default function (Vue, {router, head, isClient}) {
   head.meta.push({
     key: 'keywords',
     name: 'keywords',
-    content: 'improv,zurich,comedy,theater,theatre,improvisation,spontaneity,stage,bühne,impro,show,popup,switzerland,schweyz,live,performance'
+    content: 'wombats,wombat,wisdom,company,improv,zurich,comedy,theater,theatre,improvisation,spontaneity,stage,bühne,impro,show,popup,switzerland,schweyz,live,performance'
   })
   Vue.use(VueScrollTo, {
     offset:-65
