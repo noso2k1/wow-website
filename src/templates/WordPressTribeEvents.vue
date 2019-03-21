@@ -57,26 +57,24 @@ export default {
   metaInfo() {
     return {
       title: this.$page.wordPressTribeEvents.title,
-      script: [
-        {     
-          key: 'owaTrackerCode',
-          innerHTML: `//<![CDATA[
-            var owa_baseUrl = 'https://wombats.ch/owa/';
-            var owa_cmds = owa_cmds || [];
-            owa_cmds.push(['setSiteId', '` + process.env.GRIDSOME_OWA_SITE_ID + `']);
-            owa_cmds.push(['setPageType','event'])
-            owa_cmds.push(['trackPageView']);
-            owa_cmds.push(['trackClicks']);
-            //]]>`,
-          type:"text/javascript" }
-      ],
+      script: [{     
+        key: 'owaTrackerCode',
+        innerHTML: `//<![CDATA[
+          var owa_baseUrl = 'https://wombats.ch/owa/';
+          var owa_cmds = owa_cmds || [];
+          owa_cmds.push(['setSiteId', '` + process.env.GRIDSOME_OWA_SITE_ID + `']);
+          owa_cmds.push(['setPageType','event'])
+          owa_cmds.push(['trackPageView']);
+          owa_cmds.push(['trackClicks']);
+          //]]>`,
+        type:"text/javascript" 
+      }],
       meta: [{
         key: 'description',
         name: 'description',
         content: this.$page.wordPressTribeEvents.excerpt
       }]
-    }
-  },
+  }},
   computed: {
     event: function() {
       let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]

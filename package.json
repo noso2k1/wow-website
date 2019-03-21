@@ -12,6 +12,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.7.2",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@fortawesome/vue-fontawesome": "^0.1.6",
+    "@gridsome/plugin-sitemap": "^0.1.1",
     "@gridsome/source-wordpress-event": "https://github.com/noso2k1/source-wordpress-event/tarball/master",
     "ajv": "^6.9.1",
     "axios": "^0.18.0",

@@ -6,6 +6,8 @@
 
 module.exports = {
   siteName: 'Wisdom of Wombats',
+  siteUrl: 'https://wombats.ch',
+  siteDescription: 'Wisdom of Wombats is a theater company based in Zurich Switzerland. We develop, create and perform improvised shows in English in several venues.',
   plugins: [
     {
       use: '@gridsome/source-wordpress-event',
@@ -20,6 +22,9 @@ module.exports = {
           tribe_event: '/event/:slug'
         }
       }
+    },
+    {
+      use :'@gridsome/plugin-sitemap'
     }
   ],
   chainWebpack: config => {

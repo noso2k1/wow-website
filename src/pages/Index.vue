@@ -217,13 +217,7 @@ export default {
         type:"text/javascript"
       }
     ],
-    meta: [{
-      key: 'description',
-      name: 'description',
-      content: 'Wisdom of Wombats is a theater company based in Zurich Switzerland. We develop, create and perform improvised shows in English in several venues.'
-      }]
-    }
-  },
+  }},
   data() {
     return {
       instaToken: '10835943873.7115bff.19834ca1a1114f5c91b2c3b9577d008f',
