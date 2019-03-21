@@ -2,7 +2,6 @@
   <div class="layout">
     <a class="button is-text has-text-primary" id="btnToTop" href="#" v-scroll-to="'#top'" v-bind:style="{display: btnToTopDisplay}">
       <span class="icon">
-        <!--<i class="fas fa-chevron-circle-up fa-lg"></i>-->
         <font-awesome :icon="['fas','chevron-circle-up']" :size="'lg'" />
       </span><span>Back to top</span>
     </a>
@@ -50,11 +49,6 @@
     <!-- This is where we add the page content -->
     <slot/>
 
-    <!-- Slide up the newsletter subscribe form -->
-    <!-- 
-      <div id="nlPopup" v-bind:style="{'display':nlSlideUpDisplay}" v-on:close-popup="nlSlideUpDisplay='none'"><newsletter-subscribe-popup /></div> 
-    -->
-
     <footer class="footer">
       <div class="level content has-text-centered">
         <div class="level-item has-text-white">
@@ -72,14 +66,6 @@
   </div>
 </template>
 
-<static-query>
-query {
-  metaData {
-    siteName
-  }
-}
-</static-query>
-
 <script>
 import NewsletterSubscribePopup from '~/components/NewsletterSubscribePopup.vue'
 export default {
@@ -93,6 +79,13 @@ export default {
       nlSlideUpDisplay: 'block'
     }
   },
+  metaInfo() { return {
+    meta: [{
+      key: 'keywords',
+      name: 'keywords',
+      content: 'improv,zurich,comedy,theater,theatre,improvisation,spontaneity,stage,bühne,impro,show,popup,switzerland,schweyz'
+    }]
+  }},
   props: ['homepage'],
   mounted() {
     window.addEventListener('scroll', this.handleScroll);

@@ -13,15 +13,11 @@ export default function (Vue, {router, head, isClient}) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   head.bodyAttrs = { class: 'has-navbar-fixed-top', id:'top' }
-  //head.link.push({
-  //  rel:'stylesheet',
-  //  href:'https://use.fontawesome.com/releases/v5.6.3/css/all.css'
-  //}),
   head.script.push({
     key: 'owaScript',
     src: 'https://wombats.ch/owa/modules/base/js/owa.tracker-combined-min.js',
     async: true
-  }),
+  })
   head.script.push({
     key: 'pixelCode',
     innerHTML: `
@@ -37,11 +33,11 @@ export default function (Vue, {router, head, isClient}) {
       fbq('init', '327161094587034'); 
       fbq('track', 'PageView');  
       `
-  }),
+  })
   head.noscript.push({
     key: 'pixelCodeNoScript',
     innerHTML: `<img height="1" width="1" src="https://www.facebook.com/tr?id=327161094587034&ev=PageView &noscript=1"/>`
-  }),
+  })
   Vue.use(VueScrollTo, {
     offset:-65
   })

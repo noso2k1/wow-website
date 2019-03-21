@@ -24,6 +24,7 @@ query Post ($path: String!) {
   wordPressPost (path: $path) {
     title
     content
+    excerpt
     featuredMedia {
       sourceUrl
     }
@@ -39,20 +40,23 @@ query Post ($path: String!) {
 export default {
   metaInfo () { return {
     title: this.$page.wordPressPost.title,
-    script: [
-      {     
-        key: 'owaTrackerCode',
-        innerHTML: `//<![CDATA[
-          var owa_baseUrl = 'https://wombats.ch/owa/';
-          var owa_cmds = owa_cmds || [];
-          owa_cmds.push(['setSiteId', '` + process.env.GRIDSOME_OWA_SITE_ID + `']);
-          owa_cmds.push(['setPageType','post'])
-          owa_cmds.push(['trackPageView']);
-          owa_cmds.push(['trackClicks']);
-          //]]>`,
-        type:"text/javascript" }
-    ]
-    }
-  }
+    script: [{     
+      key: 'owaTrackerCode',
+      innerHTML: `//<![CDATA[
+        var owa_baseUrl = 'https://wombats.ch/owa/';
+        var owa_cmds = owa_cmds || [];
+        owa_cmds.push(['setSiteId', '` + process.env.GRIDSOME_OWA_SITE_ID + `']);
+        owa_cmds.push(['setPageType','post'])
+        owa_cmds.push(['trackPageView']);
+        owa_cmds.push(['trackClicks']);
+        //]]>`,
+      type:"text/javascript" 
+    }],
+    meta: [{
+      key: 'description',
+      name: 'description',
+      content: this.$page.wordPressPost.excerpt
+    }]    
+  }}
 }
 </script>

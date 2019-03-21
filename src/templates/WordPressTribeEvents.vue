@@ -34,6 +34,7 @@ query Event ($path: String!) {
   wordPressTribeEvents (path: $path) {
     title
     content
+    excerpt
     date (format: "D MMMM YYYY")
     path
     startDate
@@ -68,7 +69,12 @@ export default {
             owa_cmds.push(['trackClicks']);
             //]]>`,
           type:"text/javascript" }
-      ]
+      ],
+      meta: [{
+        key: 'description',
+        name: 'description',
+        content: this.$page.wordPressTribeEvents.excerpt
+      }]
     }
   },
   computed: {
