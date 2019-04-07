@@ -9,12 +9,17 @@
 
           <section class="tile is-anchestor">
             <div class="tile is-8">
-              <div v-if="event.content" v-html="event.content" />
+              <div>
+                <div v-if="event.content" v-html="event.content" class="content" />
+                <span class="has-text-centered"><a v-if="event.eventCost" :href="event.eventUrl" class="button is-primary">Buy tickets here</a></span>
+              </div>
             </div>
             <div class="tile">
               <div class="box">
                 <h2 class="subtitle is-spaced"><b>Where:</b> <a :href="event.venueWebsite"> {{event.venueName}}</a><span v-html="event.venueFullAddress" /></h2>
                 <h2 class="subtitle"><b>When:</b> {{event.date}} at {{event.startTime}}</h2>
+                <h2 class="subtitle" v-if="event.eventCost"><b>Tickets:</b> {{event.eventCost}} {{event.eventCurrencySymbol}}</h2>
+                <span><a v-if="event.eventCost" :href="event.eventUrl" class="button is-primary">Buy tickets here</a></span>
               </div>
             </div>
           </section>
@@ -47,6 +52,9 @@ query Event ($path: String!) {
       sourceUrl
     }
     slug
+    eventCurrencySymbol
+    eventCost
+    eventUrl
   }
 }
 </page-query>

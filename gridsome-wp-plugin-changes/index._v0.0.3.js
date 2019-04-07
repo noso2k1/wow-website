@@ -145,6 +145,9 @@ class WordPressSource {
           fields.venueFullAddress = post.eventDetails.venueFullAddress
           fields.venueCity = post.eventDetails.venueCity
           fields.venueWebsite = post.eventDetails.venueWebsite
+          fields.eventCurrencySymbol = post._EventCurrencySymbol ? post._EventCurrencySymbol : ''
+          fields.eventCost = post._EventCost ? post._EventCost : ''
+          fields.eventUrl = post._EventURL ? post._EventURL : ''
           post.date = post.eventDetails.startDate ? post.eventDetails.startDate : null
         }
 
