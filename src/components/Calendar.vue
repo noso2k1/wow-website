@@ -1,8 +1,7 @@
 <template>
   <div>
-    <div class="content highlight" v-for="(event,index) in events" :key="event.node.slug">
-      <g-link class="level box has-ribbon" :to="event.node.path">
-        <div v-if="index==0" class="ribbon is-info">Coming soon!</div>
+    <div class="content highlight" v-for="event in events" :key="event.node.slug">
+      <g-link class="level box" :to="event.node.path">
         <div class="level-left">
           <div class="level-item has-text-centered">
             <div>

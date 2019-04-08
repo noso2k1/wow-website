@@ -15,6 +15,7 @@
         </div>
       </div>
     </div>
+    <g-link v-if="$static.stories.pageInfo.totalPages > 1" to="/stories" class="button">All stories</g-link>
   </div>
 </template>
 
@@ -26,7 +27,11 @@ export default {
 
 <static-query>
 query Stories {
-  stories: allWordPressPost (sortBy:"date", order:DESC){
+  stories: allWordPressPost (sortBy:"date", order:DESC, perPage:3) {
+    pageInfo {
+      totalPages
+      currentPage
+    }
     edges{
       node{
         title
@@ -42,7 +47,6 @@ query Stories {
     }
   }
 }
-
 </static-query>
 
 <style>
