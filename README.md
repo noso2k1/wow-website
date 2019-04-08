@@ -20,8 +20,6 @@ The code in ```functions.php``` enables the additional fields in the Tribe Event
 
 - [ ] Manage differently carousel and video in the insta feed
 
-- [ ] Pagination of the "News" section
-
 - [ ] Cookies - use [this](https://github.com/promosis/vue-cookie-accept-decline) plugin - With [this](https://github.com/apertureless/vue-cookie-law) plugin, BUILD does not work.
 
 - [ ] "Get involved" section
@@ -41,6 +39,8 @@ The code in ```functions.php``` enables the additional fields in the Tribe Event
 - [ ] Review the "About us" section
 
 - [ ] Messages in case of no events or no news
+
+- [X] Pagination of the "News" section
 
 - [x] Create 404 page
 
