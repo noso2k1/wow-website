@@ -17,7 +17,7 @@
     "ajv": "^6.9.1",
     "axios": "^0.18.0",
     "better-queue": "^3.8.10",
-    "gridsome": "^0.5.6",
+    "gridsome": "^0.5.8",
     "imagemin-mozjpeg": "^8.0.0",
     "mozjpeg": "^6.0.1",
     "pngquant-bin": "^5.0.2",
@@ -32,7 +32,7 @@
   "devDependencies": {
     "bulma": "^0.7.2",
     "bulma-extensions": "^4.0.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "terser": "3.14.1",
     "vue-server-renderer": "^2.6.7",
