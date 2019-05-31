@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="$static.events.totalCount > 0">
     <div class="content highlight" v-for="event in events" :key="event.node.slug">
       <g-link class="level box" :to="event.node.path">
         <div class="level-left">
@@ -17,6 +17,13 @@
           </div>
         </div>
       </g-link>
+    </div>
+  </div>
+  <div v-else>
+    <div class="content highlight">
+      <div class="box has-text-centered">
+        <p class="subtitle is-size-4">Coming soon!</p>
+      </div>
     </div>
   </div>
 </template>

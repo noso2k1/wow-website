@@ -2,7 +2,10 @@
     <a class="column home-link-item" :href="nextShow2.path">
         <div class="section">
             <h1 class="title">Next show</h1>
-            <h2 class="subtitle"><span v-if="nextShow2.title">{{nextShow2.title['rendered']}} on {{nextShow2.startDate | moment('D MMMM YYYY')}}</span></h2>
+            <h2 class="subtitle">
+                <span v-if="nextShow2.title">{{nextShow2.title['rendered']}} on {{nextShow2.startDate | moment('D MMMM YYYY')}}</span>
+                <span v-else>Coming soon</span>
+            </h2>
         </div>
     </a>
 </template>
@@ -39,6 +42,13 @@ export default {
                         this.nextShow2.title = event.title
                         this.nextShow2.startDate = new Date(event.eventDetails.startDate)
                         this.nextShow2.venueName = event.eventDetails.venueName
+                    } else {
+                        let event = events[0]
+                        this.nextShow2.slug = ''
+                        this.nextShow2.path = '#'
+                        this.nextShow2.title = ''
+                        this.nextShow2.startDate = ''
+                        this.nextShow2.venueName = ''
                     }
                 })
         }

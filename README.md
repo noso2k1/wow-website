@@ -38,7 +38,7 @@ The code in ```functions.php``` enables the additional fields in the Tribe Event
 
 - [ ] Review the "About us" section
 
-- [ ] Messages in case of no events or no news
+- [X] Messages in case of no events or no news
 
 - [X] Pagination of the "News" section
 
