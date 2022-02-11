@@ -14,7 +14,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "@gridsome/plugin-sitemap": "^0.1.1",
     "@gridsome/source-wordpress-event": "https://github.com/noso2k1/source-wordpress-event/tarball/master",
-    "ajv": "^6.9.1",
+    "ajv": "^6.12.3",
     "axios": "^0.18.1",
     "better-queue": "^3.8.10",
     "gridsome": "^0.5.8",
